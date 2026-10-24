@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict x0UoAeEZGhf7JFjIuaAc2Pv4gjw9wWFpyWldWuY4ii4L3ZzUlUe1MUGANSWFFkK
+-- \restrict MMxhe3kzGf4AY1MziaB8VfhfYCNTI8OJoOJLAbF6J6saHa1vUXbw0YoQgYdKfd8
 
 -- Dumped from database version 15.8
 -- Dumped by pg_dump version 17.11
@@ -25583,6 +25583,7 @@ COPY "auth"."audit_log_entries" ("instance_id", "id", "payload", "created_at", "
 00000000-0000-0000-0000-000000000000	4abd9035-aded-47a1-87d8-38f9677111db	{"action":"login","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2026-10-21 20:21:49.658409+00	
 00000000-0000-0000-0000-000000000000	d5e420a8-fe6c-40ed-ba63-281b9e82245f	{"action":"login","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2026-10-21 20:21:52.670261+00	
 00000000-0000-0000-0000-000000000000	b1e78987-aec3-4abb-bebe-f18449f302eb	{"action":"logout","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"account"}	2026-10-21 20:33:56.918386+00	
+00000000-0000-0000-0000-000000000000	2fbc9723-7547-4f90-94b8-d7c91700335f	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 13:23:02.966038+00	
 00000000-0000-0000-0000-000000000000	e30c10db-38ae-40f1-8be7-740ec8f5df9d	{"action":"login","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"account","traits":{"provider":"email"}}	2026-10-21 20:34:00.770432+00	
 00000000-0000-0000-0000-000000000000	d46bc563-0574-4fdc-bc33-15fa7b128854	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-22 07:25:04.254984+00	
 00000000-0000-0000-0000-000000000000	3507c5be-6983-4216-b098-435828417472	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-22 07:25:04.293623+00	
@@ -25624,6 +25625,52 @@ COPY "auth"."audit_log_entries" ("instance_id", "id", "payload", "created_at", "
 00000000-0000-0000-0000-000000000000	47ebecc4-1ee5-4e9f-8301-fef1f15696d2	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-22 19:08:44.519097+00	
 00000000-0000-0000-0000-000000000000	4ad3236a-a256-4636-bfaa-d01376198e4b	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-22 20:23:05.810549+00	
 00000000-0000-0000-0000-000000000000	0ca88521-2bce-4bb3-80c1-4fc5b27ef766	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-22 20:23:05.848602+00	
+00000000-0000-0000-0000-000000000000	817c34ab-8340-4f47-b4ba-258ce8691a6e	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 07:15:47.922681+00	
+00000000-0000-0000-0000-000000000000	f575425f-fd56-425d-9e20-ff211ebe812a	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 07:15:47.960314+00	
+00000000-0000-0000-0000-000000000000	fea4f2be-33bf-4f8a-a13f-ea0f6ba1c30f	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 07:15:49.693446+00	
+00000000-0000-0000-0000-000000000000	3578649c-7990-4971-8feb-52da83727594	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 07:15:51.747752+00	
+00000000-0000-0000-0000-000000000000	4d963b36-5862-4151-a9f7-da205d784811	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 07:16:00.71112+00	
+00000000-0000-0000-0000-000000000000	4c1f1ad5-af35-47c8-a9c6-0e5c919c7fb4	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 08:28:14.668781+00	
+00000000-0000-0000-0000-000000000000	ce4d58eb-24b6-4a69-96f3-c584d7b61025	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 08:28:14.706327+00	
+00000000-0000-0000-0000-000000000000	b773fb0a-fb60-4a9e-9ab2-0d7f40974b30	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 09:26:26.468356+00	
+00000000-0000-0000-0000-000000000000	9abc3f22-e079-46dc-8b9d-4ce147ba6d85	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 09:26:26.493516+00	
+00000000-0000-0000-0000-000000000000	a83190ef-a84a-42c9-9f4d-2e18e4053dab	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 10:24:28.840645+00	
+00000000-0000-0000-0000-000000000000	12148ade-4b3c-46fb-bf5b-15119fe716e3	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 10:24:28.864873+00	
+00000000-0000-0000-0000-000000000000	77d4ddd3-be60-463f-ac01-cfc7967ccb8b	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 11:22:40.702351+00	
+00000000-0000-0000-0000-000000000000	6addff5a-7896-4caf-964c-1fd986f33781	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 11:22:40.73825+00	
+00000000-0000-0000-0000-000000000000	ecd82b25-6fdb-4297-9bc8-100eb270e1f7	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 12:21:03.850189+00	
+00000000-0000-0000-0000-000000000000	b84bd1cb-17e1-439a-86d2-d8e4976ce273	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 12:21:03.879588+00	
+00000000-0000-0000-0000-000000000000	fbb74555-f744-4e30-8732-cadec93dad6c	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 13:21:41.189611+00	
+00000000-0000-0000-0000-000000000000	6220d35d-722b-4dd5-89a6-16aaccdfbfb7	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 13:21:41.216254+00	
+00000000-0000-0000-0000-000000000000	f12944fc-eef1-45b0-8253-03653663ee5a	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 13:22:59.49389+00	
+00000000-0000-0000-0000-000000000000	cbe361fc-b452-4f6d-8ba1-326ab1ed3f19	{"action":"token_revoked","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 13:22:59.516085+00	
+00000000-0000-0000-0000-000000000000	f880417b-0d19-4627-be39-ad2ec95a13c9	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 13:23:00.625218+00	
+00000000-0000-0000-0000-000000000000	e6e7cf99-d36b-4ab2-90ab-aff46a0c0197	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 14:19:51.708685+00	
+00000000-0000-0000-0000-000000000000	7e0744d1-de7e-4532-b371-fbbba4a1c445	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 14:19:51.739293+00	
+00000000-0000-0000-0000-000000000000	8ce91c0e-22a7-4d03-b987-ffbf5d1bb44a	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 15:18:14.361565+00	
+00000000-0000-0000-0000-000000000000	ef2fb596-d416-49f0-bc6a-c746d604d074	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 15:18:14.386707+00	
+00000000-0000-0000-0000-000000000000	4d423844-8985-45ca-a5f3-6c8fdcb1fbab	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 16:11:11.531257+00	
+00000000-0000-0000-0000-000000000000	7aaf7a86-2e61-4656-a05b-e2835a2ab078	{"action":"token_revoked","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 16:11:11.554895+00	
+00000000-0000-0000-0000-000000000000	fa2472c4-d81c-46ca-ba28-84f4e0ae882c	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 16:11:12.91064+00	
+00000000-0000-0000-0000-000000000000	5d11f3c0-5065-47ce-9070-5de96ef03ce2	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 16:11:16.381963+00	
+00000000-0000-0000-0000-000000000000	6508a920-3b93-402e-a992-0e9b4666c5f7	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 16:16:43.72+00	
+00000000-0000-0000-0000-000000000000	2a68dbde-2875-41f5-9097-35b38a12ec21	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 16:16:43.74746+00	
+00000000-0000-0000-0000-000000000000	a0c9d873-2933-4f80-acf4-36b17903ccb8	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 17:14:52.465518+00	
+00000000-0000-0000-0000-000000000000	0d1a2ee3-2703-4963-a3d0-3736b7625ec1	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 17:14:52.498368+00	
+00000000-0000-0000-0000-000000000000	138fdd8c-28b7-4f92-b124-f7e413244ad7	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 18:13:00.761985+00	
+00000000-0000-0000-0000-000000000000	b8a747e6-22bb-49ef-9a54-d45d947553ac	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 18:13:00.789441+00	
+00000000-0000-0000-0000-000000000000	03b4ec10-37ca-4790-9e9d-f1f4b75603cc	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 19:11:25.802986+00	
+00000000-0000-0000-0000-000000000000	d06b5b33-ef4d-4ffa-ad41-2db2ee93ff7e	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 19:11:25.830691+00	
+00000000-0000-0000-0000-000000000000	0026528f-44fe-4204-b6ed-f1cbd28de3cf	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 19:53:23.618607+00	
+00000000-0000-0000-0000-000000000000	4eb62d21-b9ba-44df-bd15-e67c9be93a78	{"action":"token_revoked","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 19:53:23.655045+00	
+00000000-0000-0000-0000-000000000000	896d03b2-eb0c-430d-8ccb-bf5edb81cea1	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 19:53:25.313994+00	
+00000000-0000-0000-0000-000000000000	36afec99-68e3-424f-92d6-effc8ad05668	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 19:53:29.648611+00	
+00000000-0000-0000-0000-000000000000	e2778357-4889-4ade-9404-c542fa961ea3	{"action":"token_refreshed","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 20:14:52.475065+00	
+00000000-0000-0000-0000-000000000000	f2b45577-8f04-486c-9611-09d2da526de2	{"action":"token_revoked","actor_id":"7f17abda-e93b-4f10-a235-057e70d98525","actor_name":"Kasiyer Deneme","actor_username":"udalga96@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 20:14:52.504043+00	
+00000000-0000-0000-0000-000000000000	47ca8223-7a89-4b02-86c3-77ffd6017db4	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 22:38:18.807347+00	
+00000000-0000-0000-0000-000000000000	65c53d1f-ad5f-4287-b758-4431c9ad6f99	{"action":"token_revoked","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 22:38:18.844656+00	
+00000000-0000-0000-0000-000000000000	a5ac4cdc-2c6c-48e0-9e65-e29f6c927a90	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 22:38:20.401292+00	
+00000000-0000-0000-0000-000000000000	d24507f4-465d-46f2-8ef2-8a0057d7f78b	{"action":"token_refreshed","actor_id":"8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b","actor_username":"udalga97@gmail.com","actor_via_sso":false,"log_type":"token"}	2026-10-23 22:38:24.551509+00	
 \.
 
 
@@ -25651,8 +25698,8 @@ COPY "auth"."flow_state" ("id", "user_id", "auth_code", "code_challenge_method",
 
 COPY "auth"."users" ("instance_id", "id", "aud", "role", "email", "encrypted_password", "email_confirmed_at", "invited_at", "confirmation_token", "confirmation_sent_at", "recovery_token", "recovery_sent_at", "email_change_token_new", "email_change", "email_change_sent_at", "last_sign_in_at", "raw_app_meta_data", "raw_user_meta_data", "is_super_admin", "created_at", "updated_at", "phone", "phone_confirmed_at", "phone_change", "phone_change_token", "phone_change_sent_at", "email_change_token_current", "email_change_confirm_status", "banned_until", "reauthentication_token", "reauthentication_sent_at", "is_sso_user", "deleted_at", "is_anonymous") FROM stdin;
 00000000-0000-0000-0000-000000000000	ff52e8ab-b1aa-435b-b9c6-1a59b2d7a81b	authenticated	authenticated	udalga95@gmail.com	$2a$10$SWsqbTxf.nLcNafpBxRMquTFPBnBLRTF5pBs1tx5bGKue6LDPmoFC	2025-05-08 08:59:07.818497+00	\N		\N		\N			\N	2025-05-08 08:59:16.002928+00	{"provider": "email", "providers": ["email"]}	{"full_name": "Şube Müdürü Deneme", "email_verified": true}	\N	2025-05-08 08:59:07.813947+00	2025-05-08 08:59:16.004738+00	\N	\N			\N		0	\N		\N	f	\N	f
-00000000-0000-0000-0000-000000000000	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	authenticated	authenticated	udalga97@gmail.com	$2a$10$rKBKbDH3TxmijvzsQbK7Cuf.ZVKPMcCe.ZIwxW/0p4MBPPodizyjC	2025-08-21 10:38:37.779327+00	\N		\N		\N			\N	2026-10-22 14:51:42.685948+00	{"provider": "email", "providers": ["email"]}	{"email_verified": true}	\N	2025-08-21 10:38:37.753124+00	2026-10-22 18:25:41.32496+00	\N	\N			\N		0	\N		\N	f	\N	f
-00000000-0000-0000-0000-000000000000	7f17abda-e93b-4f10-a235-057e70d98525	authenticated	authenticated	udalga96@gmail.com	$2a$10$edjOC7B.mrBprI8BRviEJu8yqL.5jUJcAKJNFw13xce.THKkTuFXS	2025-05-08 08:56:38.139289+00	\N		\N		\N			\N	2026-10-21 20:34:00.779221+00	{"provider": "email", "providers": ["email"]}	{"full_name": "Kasiyer Deneme", "email_verified": true}	\N	2025-05-08 08:56:38.120705+00	2026-10-22 20:23:05.901868+00	\N	\N			\N		0	\N		\N	f	\N	f
+00000000-0000-0000-0000-000000000000	7f17abda-e93b-4f10-a235-057e70d98525	authenticated	authenticated	udalga96@gmail.com	$2a$10$edjOC7B.mrBprI8BRviEJu8yqL.5jUJcAKJNFw13xce.THKkTuFXS	2025-05-08 08:56:38.139289+00	\N		\N		\N			\N	2026-10-21 20:34:00.779221+00	{"provider": "email", "providers": ["email"]}	{"full_name": "Kasiyer Deneme", "email_verified": true}	\N	2025-05-08 08:56:38.120705+00	2026-10-23 20:14:52.544634+00	\N	\N			\N		0	\N		\N	f	\N	f
+00000000-0000-0000-0000-000000000000	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	authenticated	authenticated	udalga97@gmail.com	$2a$10$rKBKbDH3TxmijvzsQbK7Cuf.ZVKPMcCe.ZIwxW/0p4MBPPodizyjC	2025-08-21 10:38:37.779327+00	\N		\N		\N			\N	2026-10-22 14:51:42.685948+00	{"provider": "email", "providers": ["email"]}	{"email_verified": true}	\N	2025-08-21 10:38:37.753124+00	2026-10-23 22:38:18.905015+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	b6fd8cd0-c2e5-4666-9dc9-359f74ccd20c	authenticated	authenticated	mackaengin@gmail.com	$2a$10$jGhCiObVhTXFcNeUH0WoC.ESZAZ51.9zzvZSZwIOpT8scU0C5Y6MG	\N	\N	70a2bc1f966188a720d196cef6bd6a7c0cd405053bec3b29ad1a9476	2025-05-10 22:26:51.341094+00		\N			\N	\N	{"provider": "email", "providers": ["email"]}	{"sub": "b6fd8cd0-c2e5-4666-9dc9-359f74ccd20c", "email": "mackaengin@gmail.com", "email_verified": false, "phone_verified": false}	\N	2025-05-10 22:26:51.330651+00	2025-05-10 22:26:52.995939+00	\N	\N			\N		0	\N		\N	f	\N	f
 00000000-0000-0000-0000-000000000000	1b66ec17-a477-4833-85ab-88f97ff4155c	authenticated	authenticated	mcan81023@gmail.com	$2a$10$toBgj7nlVE23bmIXWDFtm.bm7X7E1qmvMKW38nWa8j9/yE.n0Ot9m	2025-05-11 15:30:01.56285+00	\N		\N		\N			\N	\N	{"provider": "email", "providers": ["email"]}	{"full_name": "Mustafa Can", "email_verified": true}	\N	2025-05-11 15:30:01.547551+00	2025-05-11 15:30:01.563691+00	\N	\N			\N		0	\N		\N	f	\N	f
 \.
@@ -25696,8 +25743,8 @@ COPY "auth"."sessions" ("id", "user_id", "created_at", "updated_at", "factor_id"
 1bdbf4b4-b606-4a56-829c-590b2fdc69de	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	2026-10-22 14:51:39.01135+00	2026-10-22 14:51:39.01135+00	\N	aal1	\N	\N	Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1	95.10.179.151	\N	\N	\N	\N	\N
 3641c0ec-b620-4e1a-be2b-c162fcff91f8	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	2026-10-22 14:51:40.358391+00	2026-10-22 14:51:40.358391+00	\N	aal1	\N	\N	Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1	95.10.179.151	\N	\N	\N	\N	\N
 63d7cc5a-7d2a-40e4-b77d-498178250405	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	2026-10-22 14:51:41.708128+00	2026-10-22 14:51:41.708128+00	\N	aal1	\N	\N	Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1	95.10.179.151	\N	\N	\N	\N	\N
-04c116b8-ab24-4469-ab65-14cf804eea50	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	2026-10-22 14:51:42.68604+00	2026-10-22 18:25:47.458966+00	\N	aal1	\N	2026-10-22 18:25:47.45828	Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1	95.10.179.151	\N	\N	\N	\N	\N
-570d5ae3-0daa-4bf4-9e91-52db4449f153	7f17abda-e93b-4f10-a235-057e70d98525	2026-10-21 20:34:00.781696+00	2026-10-22 20:23:05.918589+00	\N	aal1	\N	2026-10-22 20:23:05.918476	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36	95.10.179.151	\N	\N	\N	\N	\N
+04c116b8-ab24-4469-ab65-14cf804eea50	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	2026-10-22 14:51:42.68604+00	2026-10-23 22:38:24.554664+00	\N	aal1	\N	2026-10-23 22:38:24.554579	Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6 Mobile/15E148 Safari/604.1	88.234.83.184	\N	\N	\N	\N	\N
+570d5ae3-0daa-4bf4-9e91-52db4449f153	7f17abda-e93b-4f10-a235-057e70d98525	2026-10-21 20:34:00.781696+00	2026-10-23 20:14:52.556439+00	\N	aal1	\N	2026-10-23 20:14:52.556324	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36	95.10.179.151	\N	\N	\N	\N	\N
 \.
 
 
@@ -25802,10 +25849,28 @@ COPY "auth"."refresh_tokens" ("instance_id", "id", "token", "user_id", "revoked"
 00000000-0000-0000-0000-000000000000	11103	nq7gjgcyvxiq	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-22 16:13:23.678573+00	2026-10-22 17:11:51.968382+00	226gid3bnxvi	570d5ae3-0daa-4bf4-9e91-52db4449f153
 00000000-0000-0000-0000-000000000000	11104	ceqwleabvxep	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-22 17:11:51.992852+00	2026-10-22 18:10:21.011346+00	nq7gjgcyvxiq	570d5ae3-0daa-4bf4-9e91-52db4449f153
 00000000-0000-0000-0000-000000000000	11101	v7o6qm5cjzwn	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	t	2026-10-22 14:51:42.686838+00	2026-10-22 18:25:41.273204+00	\N	04c116b8-ab24-4469-ab65-14cf804eea50
-00000000-0000-0000-0000-000000000000	11106	bt7u7mw7vtiv	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	f	2026-10-22 18:25:41.310628+00	2026-10-22 18:25:41.310628+00	v7o6qm5cjzwn	04c116b8-ab24-4469-ab65-14cf804eea50
 00000000-0000-0000-0000-000000000000	11105	fvy5vjzjpv5e	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-22 18:10:21.037627+00	2026-10-22 19:08:44.521727+00	ceqwleabvxep	570d5ae3-0daa-4bf4-9e91-52db4449f153
 00000000-0000-0000-0000-000000000000	11107	2cyi4pawbaar	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-22 19:08:44.548096+00	2026-10-22 20:23:05.851106+00	fvy5vjzjpv5e	570d5ae3-0daa-4bf4-9e91-52db4449f153
-00000000-0000-0000-0000-000000000000	11108	mig2cogivakd	7f17abda-e93b-4f10-a235-057e70d98525	f	2026-10-22 20:23:05.88953+00	2026-10-22 20:23:05.88953+00	2cyi4pawbaar	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11108	mig2cogivakd	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-22 20:23:05.88953+00	2026-10-23 07:15:47.965304+00	2cyi4pawbaar	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11109	frvg4gmiykl2	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 07:15:48.00545+00	2026-10-23 08:28:14.712262+00	mig2cogivakd	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11110	mmf3gto76yhp	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 08:28:14.753551+00	2026-10-23 09:26:26.4961+00	frvg4gmiykl2	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11111	4tzkce43pew3	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 09:26:26.523973+00	2026-10-23 10:24:28.867533+00	mmf3gto76yhp	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11112	2ybksxl24p4n	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 10:24:28.893512+00	2026-10-23 11:22:40.741668+00	4tzkce43pew3	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11113	p3bzyowm6sq2	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 11:22:40.772123+00	2026-10-23 12:21:03.882879+00	2ybksxl24p4n	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11114	ejxudk4hjuhv	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 12:21:03.907915+00	2026-10-23 13:21:41.220187+00	p3bzyowm6sq2	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11106	bt7u7mw7vtiv	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	t	2026-10-22 18:25:41.310628+00	2026-10-23 13:22:59.52107+00	v7o6qm5cjzwn	04c116b8-ab24-4469-ab65-14cf804eea50
+00000000-0000-0000-0000-000000000000	11115	j6t6vvwn7dow	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 13:21:41.251491+00	2026-10-23 14:19:51.742509+00	ejxudk4hjuhv	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11117	i7af4vgaulmx	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 14:19:51.771612+00	2026-10-23 15:18:14.389441+00	j6t6vvwn7dow	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11116	7lslx4sq5lmd	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	t	2026-10-23 13:22:59.546098+00	2026-10-23 16:11:11.557325+00	bt7u7mw7vtiv	04c116b8-ab24-4469-ab65-14cf804eea50
+00000000-0000-0000-0000-000000000000	11118	dqo4n5tolaqn	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 15:18:14.418498+00	2026-10-23 16:16:43.751263+00	i7af4vgaulmx	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11120	eihd4jzy764n	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 16:16:43.774363+00	2026-10-23 17:14:52.501181+00	dqo4n5tolaqn	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11121	l5zkjiecyp2q	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 17:14:52.536862+00	2026-10-23 18:13:00.792417+00	eihd4jzy764n	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11122	vcy5g7xxsadu	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 18:13:00.829969+00	2026-10-23 19:11:25.833275+00	l5zkjiecyp2q	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11119	ugkvgqt3xjjx	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	t	2026-10-23 16:11:11.584121+00	2026-10-23 19:53:23.66066+00	7lslx4sq5lmd	04c116b8-ab24-4469-ab65-14cf804eea50
+00000000-0000-0000-0000-000000000000	11123	wq645mdszcpb	7f17abda-e93b-4f10-a235-057e70d98525	t	2026-10-23 19:11:25.868491+00	2026-10-23 20:14:52.507277+00	vcy5g7xxsadu	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11125	ssdfv3yl5vdv	7f17abda-e93b-4f10-a235-057e70d98525	f	2026-10-23 20:14:52.534799+00	2026-10-23 20:14:52.534799+00	wq645mdszcpb	570d5ae3-0daa-4bf4-9e91-52db4449f153
+00000000-0000-0000-0000-000000000000	11124	nz5bmqipcq33	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	t	2026-10-23 19:53:23.703591+00	2026-10-23 22:38:18.849117+00	ugkvgqt3xjjx	04c116b8-ab24-4469-ab65-14cf804eea50
+00000000-0000-0000-0000-000000000000	11126	m6j7retnoz5k	8f5ee05f-3de6-4d6c-abdf-9c1c1dd8aa3b	f	2026-10-23 22:38:18.890508+00	2026-10-23 22:38:18.890508+00	nz5bmqipcq33	04c116b8-ab24-4469-ab65-14cf804eea50
 \.
 
 
@@ -25914,14 +25979,14 @@ b3ff6ef5-51c7-4a53-96a4-f40af4959b27	BARDAK SOĞUK(BÜYÜK)	adet	0.00	0.00	2025-
 COPY "public"."branch_ingredient_stock" ("id", "branch_id", "ingredient_id", "stock_level", "low_stock_threshold", "created_at", "updated_at") FROM stdin;
 77623221-058a-4853-a972-c2cf0f2610e5	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	bed439bf-1ebe-40a0-a936-08f33a260c2b	9969	10	2025-05-06 08:45:58.781162+00	2025-05-10 15:26:10.946796+00
 d922644a-51af-4032-848d-fb5735a9e195	b53895e7-9b54-479d-85ee-6478226abd11	33aec911-2a82-4265-a29e-de8a59af7636	100	10	2025-05-06 15:17:28.671058+00	2025-05-06 15:17:28.671058+00
-2819af12-c1ed-491b-9b58-9336d7618516	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	25338	5	2025-05-10 15:36:57.713659+00	2026-10-22 19:26:13.57547+00
-a86d7231-83c0-4db4-b811-11d532664050	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	3d64b118-1c5a-4452-a244-f9523a4842bd	1933488	5	2025-05-10 15:37:37.847281+00	2026-10-22 19:27:22.185958+00
-f647e88a-29da-46e2-82bf-a0f6e58f6567	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	33aec911-2a82-4265-a29e-de8a59af7636	2693561	25	2025-05-08 07:09:30.06189+00	2026-10-22 19:46:29.958881+00
-5e8d37a8-4755-45a9-ba1d-c046aa8c5ac9	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	b01569db-3d22-4a42-9055-13583391d6d0	51378	10	2025-05-10 15:15:43.022937+00	2026-10-22 19:50:35.10557+00
-b14e6233-2e5f-41cc-88fa-fbe33502b5a8	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	6407d9f9-3b85-478d-97b0-b8c33387031e	86455	10	2025-05-10 15:16:44.378027+00	2026-10-22 19:55:17.668622+00
+a86d7231-83c0-4db4-b811-11d532664050	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	3d64b118-1c5a-4452-a244-f9523a4842bd	1933461	5	2025-05-10 15:37:37.847281+00	2026-10-23 18:47:23.727548+00
+f647e88a-29da-46e2-82bf-a0f6e58f6567	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	33aec911-2a82-4265-a29e-de8a59af7636	2693537	25	2025-05-08 07:09:30.06189+00	2026-10-23 18:53:45.814472+00
+b14e6233-2e5f-41cc-88fa-fbe33502b5a8	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	6407d9f9-3b85-478d-97b0-b8c33387031e	86396	10	2025-05-10 15:16:44.378027+00	2026-10-23 19:01:57.192859+00
+5e8d37a8-4755-45a9-ba1d-c046aa8c5ac9	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	b01569db-3d22-4a42-9055-13583391d6d0	51335	10	2025-05-10 15:15:43.022937+00	2026-10-23 19:20:04.217576+00
+242c3913-7b65-410a-92b0-b78f6cbd8615	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	cf765b90-5fd9-473d-bd51-4412fe7cf6dc	93160	5	2025-05-06 08:50:42.042098+00	2026-10-23 19:20:04.738693+00
 bccaf3f2-7313-4168-982f-d30c5cad79d7	b53895e7-9b54-479d-85ee-6478226abd11	bed439bf-1ebe-40a0-a936-08f33a260c2b	84	10	2025-05-06 15:17:05.486217+00	2025-05-07 23:28:44.545791+00
+2819af12-c1ed-491b-9b58-9336d7618516	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	25188	5	2025-05-10 15:36:57.713659+00	2026-10-23 20:07:00.601377+00
 6dfa8f91-95fc-44c9-91d4-fbe95c098584	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	8e07f926-7df9-473c-abc0-78b79e634565	83274	5	2025-05-10 15:37:23.569833+00	2026-10-20 17:42:57.940844+00
-242c3913-7b65-410a-92b0-b78f6cbd8615	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12	cf765b90-5fd9-473d-bd51-4412fe7cf6dc	93196	5	2025-05-06 08:50:42.042098+00	2026-10-22 17:51:52.989156+00
 3c81d4ff-aba7-40e3-bc09-eaa484a25408	b53895e7-9b54-479d-85ee-6478226abd11	cf765b90-5fd9-473d-bd51-4412fe7cf6dc	361	10	2025-05-06 09:13:07.21216+00	2025-05-11 09:48:02.641791+00
 \.
 
@@ -132178,6 +132243,167 @@ f62713f7-1404-4574-968c-2dd0715bbe96	7f17abda-e93b-4f10-a235-057e70d98525	7f17ab
 b439e504-aba5-4440-87ed-941773c1db9d	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-22 19:47:24.545142+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
 0d814410-6d38-4d0d-be7a-3c18a4e25e8f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	450.00	2026-10-22 19:50:34.001347+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
 fdce8758-036c-4cbe-a114-7fabefc3f0c7	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	100.00	2026-10-22 19:55:16.928853+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+a6aab2f1-5071-4997-8a45-03b465c35646	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	250.00	2026-10-23 07:58:53.272987+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+f8e7f93c-9714-4f7c-b26d-43ccdc134124	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	145.00	2026-10-23 08:28:47.174291+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+c90f7d85-9a7a-4a28-b42e-f349ee05d823	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	85.00	2026-10-23 09:04:16.669303+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+271307eb-c150-4f26-bdc2-282871694332	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 09:14:16.376319+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+81fa4dbc-8db6-4994-a9a7-625d58c25d17	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	280.00	2026-10-23 09:15:57.610695+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+0de4be95-95d4-4e0f-a572-471c8f349362	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	140.00	2026-10-23 09:17:03.794595+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+e4f7585b-417d-41ac-a51d-4a3fcd9cb06c	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 09:21:44.588056+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+9f2cf2ff-7928-42ec-88d1-3e2a395b6dcb	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 09:22:27.126055+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+36233fba-9260-4f38-be8e-1bc15d5f456b	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 09:28:22.346369+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+7e2ec897-3786-4e41-9fdc-7a2f835f97fd	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	380.00	2026-10-23 09:40:52.704619+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+585b9315-89f7-43cf-9d33-65fdbeafe0f7	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	250.00	2026-10-23 09:52:36.45787+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+8d0992e8-f6fd-4f3e-88ae-6fddd403ecd0	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	320.00	2026-10-23 09:56:57.768142+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+9414b7ef-7e77-426b-b635-7274da41b50f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	390.00	2026-10-23 10:01:15.686193+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+70a7351a-fd29-4395-a2b3-61e305f887c3	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	80.00	2026-10-23 10:03:02.848536+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+71534207-e602-4ada-a47a-adcdf58e8530	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	280.00	2026-10-23 10:08:56.344692+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+3b3bf286-848a-484e-9dae-a3e16113192d	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	580.00	2026-10-23 10:13:34.857112+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+d55949db-a6d8-47b3-8170-8941d013ff02	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 10:16:26.470516+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+1ece960f-2e47-4847-ad42-6ec99c8cc1e4	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 10:18:30.641126+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+139cf2b1-48e7-4d45-a088-ea6dfaacd67e	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 10:20:27.729645+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+d98e3719-0f64-4176-b16c-96bd566beb4c	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	175.00	2026-10-23 10:22:54.143159+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+62f7cf11-fd91-46f3-9915-d8523ca86874	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	120.00	2026-10-23 10:25:24.058226+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+399ea50b-77e4-4272-8d2c-b82c6fbf0212	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	650.00	2026-10-23 10:29:17.414888+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+54fb7c97-9ee0-43a2-9f13-8f8dc909b25b	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	240.00	2026-10-23 10:31:40.16845+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+2b85fa6e-d9e2-47ee-98a6-14bf7cafce2f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 10:33:25.949357+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+0b12bc10-2de3-455a-a90a-18ccc5a1ef58	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	235.00	2026-10-23 10:34:34.58583+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+61774896-e0ef-4fe6-8ad0-e236c2cf4ee5	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 10:38:59.166692+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+cbd7f4a0-05f3-47ab-8f10-48b234f9d7f0	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	270.00	2026-10-23 10:40:45.603496+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+250a8d53-b0f0-4e97-a647-c69a80c7dfb1	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	80.00	2026-10-23 10:41:47.219736+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+e4986579-4d25-43e4-acf2-78e8e3596a03	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	25.00	2026-10-23 10:42:34.662742+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+2c4e36c9-544f-4f1f-b76c-963aa0d6673c	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 10:46:11.627608+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+588a6d17-527a-49c2-99e3-4a755ccea926	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	175.00	2026-10-23 10:47:41.612197+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+2f327509-fb95-4937-bea2-f2bf35a1cb62	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 10:55:54.478067+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+78eb71e6-adc7-482f-8ddc-4c923db0547d	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	310.00	2026-10-23 11:00:30.683511+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+1c429972-f146-4d0e-8d00-f8c19a6d56de	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	270.00	2026-10-23 11:12:15.881779+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+21effa0f-1e1d-4bb4-8230-2b33397b1fbb	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 11:14:32.005148+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+1bfb36e8-71c7-4435-89d2-bf99397c3a09	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	240.00	2026-10-23 11:16:10.708287+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+d4255c15-8ae2-4495-bfc4-01ab76ba15fa	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 11:36:16.02987+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+fd0127d9-082e-4ad0-b099-79cb66422cf7	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 11:36:31.005067+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+24e3ca25-e9a4-41d5-8777-8093e9943ced	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	210.00	2026-10-23 11:43:01.425555+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+3a9e3e4b-edff-449b-8518-27b0d85d784c	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 11:44:05.260273+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+2c2614c6-6ee7-4624-a1d7-4c987bfc3a19	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 11:45:48.146451+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+e95d9e51-e82b-49c9-a33b-b66f5cb8524e	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	420.00	2026-10-23 11:49:13.646003+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b379b627-9b9c-45b6-beed-8d0387891fc3	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 12:00:48.107046+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+6af207bc-b219-4788-80b3-20c2c5b3371e	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	330.00	2026-10-23 12:04:26.942414+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+79488dbb-f823-4821-bcca-9fa61ef04555	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	270.00	2026-10-23 12:13:00.949338+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b3bcc025-a5b2-4742-8dc0-944deced9a79	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	230.00	2026-10-23 12:15:39.864053+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+3c86923d-1479-4b13-8aec-bfbd464c779f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	870.00	2026-10-23 12:41:40.271452+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+8dc7c154-5617-41fb-986d-c4afce95b1c0	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	230.00	2026-10-23 12:44:03.047533+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+e7a68f51-b37a-49a3-b5b0-f30141a3a94f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 12:49:53.219428+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+0406f2af-5520-485d-b5cd-c3fd94314558	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	110.00	2026-10-23 12:52:41.485083+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+4daf0925-0bc0-49fa-aef9-8730326373bb	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	330.00	2026-10-23 13:02:06.288179+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+11e30d6b-9c2f-43d8-871f-70153f1aaba0	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 13:02:57.820244+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+e287c0fc-6ee6-4919-a2fd-562738630eca	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	250.00	2026-10-23 13:03:39.092411+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+71f44784-d209-4563-8dd2-ff0f5214b1ae	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	130.00	2026-10-23 13:05:52.74967+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+373a6730-35aa-4a5c-94e1-84e272137561	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 13:22:09.657272+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+e7d06703-252b-429c-890c-71da416aea5b	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	270.00	2026-10-23 13:22:48.824328+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b401e65c-389b-4307-99da-39f9ea1a6a8c	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	130.00	2026-10-23 13:23:07.933416+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+f895d129-a096-49e2-ad21-43528511c01a	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 13:25:00.677916+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+cf9b0fbf-c751-4d20-ad3c-c7545469a842	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 13:25:23.286193+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+23d4e20c-825d-43bd-af1c-c6d2e36c9e7d	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	240.00	2026-10-23 13:31:05.813285+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+323185f5-3183-4c98-ac17-a4e70aa00e76	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	125.00	2026-10-23 13:33:06.81578+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+f3569153-c464-4720-bcd1-018f383ecfac	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 13:33:22.792117+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+d6f6742d-ffa2-40a2-b5fa-b77e4918900b	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 13:37:52.366329+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+66eaaaf0-3eb8-4039-8f08-e1050564c468	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	50.00	2026-10-23 13:47:33.331812+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+663796af-2d87-4bd6-a9f4-e2e6e2eb3680	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 13:50:22.523276+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+da7f3996-2417-42fc-9431-0da7316ed934	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 13:57:01.693255+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+467b1423-62d3-4d67-9e39-afbc9f839803	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	130.00	2026-10-23 14:00:10.112715+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+f23e958f-c309-4f4d-b4a3-339ffcdf3c5d	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	270.00	2026-10-23 14:00:32.646916+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+f2275226-318a-4c03-bb71-b7cbffeb9d06	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	190.00	2026-10-23 14:04:06.225579+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+0bd34344-bbda-48aa-b4bf-ea1b29a2ff24	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	130.00	2026-10-23 14:05:27.643566+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+f05b90ee-2118-4d93-8621-81c6bd908685	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	555.00	2026-10-23 14:08:58.42219+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+6bce80f4-2be6-4c03-a502-35ed1ca42e32	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	360.00	2026-10-23 14:09:41.552861+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+16eae660-b8e0-4bbc-a8b0-762cae713359	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	60.00	2026-10-23 14:11:25.355387+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+fea4cf94-1533-4e56-b022-5e64996eb1a5	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	130.00	2026-10-23 14:13:50.107401+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+03b2615b-3839-40c2-8bc8-c2e6177f136e	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 14:14:26.333036+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+90322330-29a4-45d1-9e33-26f2ed5c9bd0	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	130.00	2026-10-23 14:20:48.921459+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+8da04a1c-7e9a-4faf-9a20-ef053b013ce5	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	250.00	2026-10-23 14:26:38.818506+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+c36866b8-5d0d-48d5-b5ce-c16fb0c775bc	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	160.00	2026-10-23 14:27:40.214239+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+cd7cb672-f24d-4f87-ad50-3e6e4df07b37	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	265.00	2026-10-23 14:35:06.734702+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b85daca3-916e-43f9-a73f-322c90273d56	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 14:39:23.513577+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+714c2033-aebc-4b70-b758-9446c3c2acd3	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	280.00	2026-10-23 14:41:25.147592+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+ae904beb-4fce-4a82-9353-88f1a7c1a86d	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	100.00	2026-10-23 14:41:50.542722+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+78ec3612-1514-46d9-988a-61307ee1f4ab	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	280.00	2026-10-23 14:44:23.232267+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+80b7f4ae-e223-43ca-b84f-c393290fc1fb	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 14:46:14.621578+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+643a4c80-6706-4556-baab-37685114cae5	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 14:49:37.457515+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+90a9d82b-9988-441a-9cb8-40739caf260e	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	230.00	2026-10-23 14:50:26.280839+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+ac30d106-e6cc-4946-a525-93df0ae30f47	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	380.00	2026-10-23 14:51:37.528658+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b4378aa6-a444-4b39-bce0-269bfd266e65	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	175.00	2026-10-23 14:54:02.575356+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+0d6a0e70-c53b-4cd1-b621-c8402b5784e9	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	450.00	2026-10-23 14:54:26.069692+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+ae2e9c79-3a7e-40f1-a342-789d9e5af2e4	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 15:03:47.969628+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+ec6c3c34-b104-494c-bfa0-d789640c0b89	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	360.00	2026-10-23 15:05:53.342562+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+2b020f4a-4469-428e-bf06-9ec4c8fbb225	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 15:06:52.591842+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b5aef338-2745-48f7-8420-4385b2f69210	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	100.00	2026-10-23 15:07:31.419831+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+00695a7f-3b60-456a-bfa4-304e6ee186be	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	290.00	2026-10-23 15:10:26.48823+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+eed60154-33d7-4d5a-b57f-f135998b6105	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 15:17:02.150839+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+06d2de58-e9f6-4dc9-a313-ac1c0cc64a00	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	420.00	2026-10-23 15:21:04.735885+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+03eb12f7-7174-4fd6-94ce-4caf5a3205c9	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	745.00	2026-10-23 15:30:19.289032+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+f068e6b3-4222-4aa8-8f34-a62797aebb05	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 15:40:15.684947+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+c2cf3d48-d33e-4c6d-8dad-8bbf4fe2982d	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 15:52:16.888829+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+2812887e-5f4b-49af-bd17-6fce262c7d9e	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	280.00	2026-10-23 15:54:09.576335+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+a5b5d193-be8a-4692-804f-72ed71118030	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 15:58:17.920214+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+413cf718-88a5-4d5d-8800-93fe093c8c65	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 16:01:12.313773+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+d3a459aa-b0f1-43a2-acbd-942d11add4b3	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	480.00	2026-10-23 16:03:57.029793+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+e4682983-6523-4184-b39c-11a3ba0877c4	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 16:06:43.966001+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+d3283cbf-a221-4a59-89ba-10b1e4f20d1f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 16:07:38.974617+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b29cd282-553d-4ef4-93c2-af483466e02b	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	225.00	2026-10-23 16:08:23.474403+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+45054444-5aba-4f9b-9c01-383b3c5f648f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	550.00	2026-10-23 16:23:11.00126+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+c1ec0873-cde3-445a-bccc-c62feac904b6	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	100.00	2026-10-23 16:26:21.51123+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+9c56bf16-4f6d-43b7-9e89-c05e479ee22c	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	325.00	2026-10-23 16:34:49.872407+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+c7027e39-18ea-4b33-a86a-1297806f54b4	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 16:37:01.533246+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+103b5f17-14b5-4255-bede-9ca9f011238f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 16:37:59.151755+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+9940dd7b-6d37-4e8b-95a4-2dda2ee6fc65	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	220.00	2026-10-23 16:41:04.648797+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+7cf60ee1-4d00-4b1b-b37e-f783503d0c53	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 16:45:48.681915+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+eb3fc739-94e0-4953-840c-41bf69c7852a	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	220.00	2026-10-23 16:51:45.270282+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+bd604788-b2ec-42af-8786-f8e071982a0c	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	600.00	2026-10-23 16:53:54.177895+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+3f0f0143-5d3a-4ccb-b1d4-9e6d2f04f152	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	290.00	2026-10-23 16:55:50.436532+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b2b0b987-6ab6-42db-a386-6d0cbc54bf02	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	175.00	2026-10-23 16:58:54.268436+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+eafa278e-5174-4f5b-8ff7-0b0fe04430f5	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	120.00	2026-10-23 16:59:17.548021+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+afc7a759-aa83-4567-89f5-1d4e79cfbfb7	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	410.00	2026-10-23 17:04:56.506065+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+606f27c6-897a-4c6d-ae28-79c958323625	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	500.00	2026-10-23 17:06:20.331893+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+01371182-4dad-45cb-ae2e-9fcbd9419487	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 17:18:37.812826+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+1538f469-3889-486a-9b3f-7c4e0b6e1892	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 17:22:49.198931+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+6aa4fcf1-9086-4f87-afa6-0bf5ae29438f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 17:24:12.222676+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+267cd979-be13-461d-9d5e-0c8b4e9c534b	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 17:24:33.188209+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+d392937c-902a-4725-bddd-95f9f58aaf1f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 17:26:04.659266+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+da089c7c-668b-4046-8c76-8743f2c1866a	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 17:28:14.165033+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+7d87188e-eb12-41b5-80bd-8c3bbb54d999	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	240.00	2026-10-23 17:28:57.495478+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+59005f30-956a-4ff3-a744-0279cff4df0f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	200.00	2026-10-23 17:31:38.2099+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+c4d1834a-9e33-460b-aa84-3981c902cc08	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	240.00	2026-10-23 17:39:51.215392+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+698c9a7e-410e-46fa-9442-466e9156c0f4	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 17:43:23.331327+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+0dde5d48-fcf8-49ad-bf65-bb80f01153a0	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	100.00	2026-10-23 17:43:44.907959+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+e3ce5ee0-cd27-419a-8e94-a708f7d6eff1	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 17:46:27.462741+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b761db1e-7eb4-448d-9caf-c2e0be05fc32	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	90.00	2026-10-23 17:48:16.122395+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b6e3bfbd-2923-4f04-a2fb-af0df9981060	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 17:49:45.015114+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+2ca51dcf-4cb7-4253-8694-84a298046ec0	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	175.00	2026-10-23 17:51:13.114962+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+250d869a-550c-49ad-8860-4c1f6a07eeec	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	130.00	2026-10-23 17:55:19.870178+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+44e797ed-3cb3-4d82-a602-bab5f765df24	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 17:58:55.791052+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+006d5a2c-df8b-4044-9eb9-b954d9d89898	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 18:01:34.367164+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+67e717a7-deb9-41f9-a03d-3ceb88473ad3	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	300.00	2026-10-23 18:06:37.721715+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+a0ed406e-30d3-46bd-8f19-5798e8fe6763	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	250.00	2026-10-23 18:10:42.875691+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+4e38aab2-62f8-45ad-8c48-3b9d5381f9a3	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	540.00	2026-10-23 18:12:58.261392+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+7cefe855-e851-4b4f-88b0-cf59169572d6	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	50.00	2026-10-23 18:13:59.244164+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+39b53b9c-5c78-4578-8262-6f2396a78307	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	450.00	2026-10-23 18:26:41.794614+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+12e5341c-fc40-484e-bf37-437d71fa27b0	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	270.00	2026-10-23 18:28:41.252952+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b0764b98-730d-47f0-b5f7-2aca306567ac	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	270.00	2026-10-23 18:30:02.040009+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+3795f035-0a7b-4c52-b8f8-362de5698d56	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	25.00	2026-10-23 18:30:47.834926+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+cecf04ed-29b9-4f8e-8972-f6f39e9e06b6	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	410.00	2026-10-23 18:31:47.672053+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b29cf2aa-6dc4-44cd-907e-adca5afd320b	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	100.00	2026-10-23 18:33:26.725682+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+436c3e95-c38c-4f4c-ab5a-29afcc628e1c	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	110.00	2026-10-23 18:36:54.812147+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+d01afcbc-c6fa-4c58-b62b-b411e0249537	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	240.00	2026-10-23 18:38:40.788622+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+e53a9105-74a3-46df-b86d-5b1e36f9597e	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	280.00	2026-10-23 18:41:26.508436+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+fbc6d492-eac0-4d2b-b61d-4820fdd3ec76	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	650.00	2026-10-23 18:44:08.92743+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+a82e85c6-3aa1-4fd3-8901-f22a16ab72e8	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	230.00	2026-10-23 18:47:22.859847+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+da11451f-f854-4914-be6d-cbf307f9e444	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 18:50:31.444178+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+b5d6eca8-6e34-41de-9172-2678a9a858be	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	420.00	2026-10-23 18:50:47.129639+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+31336e82-4b87-4a7d-b9cd-8068b68a9920	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	150.00	2026-10-23 18:53:44.045204+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+6754679a-3ee1-4a16-9504-31407687cf53	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	270.00	2026-10-23 18:55:40.405884+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+d3870373-349c-475f-a677-52b9ca64716f	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	550.00	2026-10-23 19:01:54.675759+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+d75905cc-e54f-4941-b8c5-2f51c63f9ac5	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	120.00	2026-10-23 19:06:38.630208+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+96407d82-0a50-43ba-8419-fb1948ee0d4c	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	240.00	2026-10-23 19:20:03.244805+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
+16c2cef7-0ec3-4643-90f1-39d59b044b38	7f17abda-e93b-4f10-a235-057e70d98525	7f17abda-e93b-4f10-a235-057e70d98525	bd475e5c-7dbf-45bd-a3d2-10a2591320a2	260.00	2026-10-23 20:06:59.527257+00	ba9600ff-7990-42e4-bf8e-07a9c8ec9e12
 \.
 
 
@@ -300835,6 +301061,248 @@ cd91e30a-b150-427d-ae80-b16b0d6b7dfd	61fc56e2-f589-4ade-ad69-8e63713ac2e7	db6af4
 833b08e5-4367-4703-a496-8e56a996ad52	b439e504-aba5-4440-87ed-941773c1db9d	16af909c-1dc1-4308-9bab-956b05a662b4	2	150.00
 8e079500-3a44-4aae-a15f-8771085fc4f7	0d814410-6d38-4d0d-be7a-3c18a4e25e8f	16af909c-1dc1-4308-9bab-956b05a662b4	3	150.00
 46b198e4-57bd-4ecd-a610-cdd455ec5b08	fdce8758-036c-4cbe-a114-7fabefc3f0c7	9c286dd2-e03b-4b2c-b602-a6c59de3d0a6	1	100.00
+210517b7-0efe-4198-83aa-5f6193af039b	a6aab2f1-5071-4997-8a45-03b465c35646	9c286dd2-e03b-4b2c-b602-a6c59de3d0a6	1	100.00
+048de253-625e-4198-ae69-a50ebb596754	a6aab2f1-5071-4997-8a45-03b465c35646	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+aea3dbd3-f0d1-4fcf-8886-e827a219d77c	f8e7f93c-9714-4f7c-b26d-43ccdc134124	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+46a3edae-ae1a-4876-b1a1-b8029e935070	f8e7f93c-9714-4f7c-b26d-43ccdc134124	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+796c7514-6bc7-473d-971b-a64a8fda5f18	c90f7d85-9a7a-4a28-b42e-f349ee05d823	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+bae8b1d4-dd02-45d0-991f-20386d37a07d	c90f7d85-9a7a-4a28-b42e-f349ee05d823	260ec6b8-e242-459c-8758-83e06ffab440	1	60.00
+74ed26ab-87a2-4c1e-9956-8613c109a4ae	271307eb-c150-4f26-bdc2-282871694332	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+820fe503-3aa9-4fa3-a57e-dcda55274a06	81fa4dbc-8db6-4994-a9a7-625d58c25d17	9c286dd2-e03b-4b2c-b602-a6c59de3d0a6	2	100.00
+95a45c78-b65a-4f55-b763-01c7ca385003	81fa4dbc-8db6-4994-a9a7-625d58c25d17	67e4e4d2-1e4e-4ad8-928c-99f5a82719b1	1	80.00
+f756a6e9-bf9f-4a3f-9e80-089074c16066	0de4be95-95d4-4e0f-a572-471c8f349362	5355985a-dc34-413b-8c57-61b38531c825	1	140.00
+219d6cbd-65ab-4d23-9c79-111ab8acad6e	e4f7585b-417d-41ac-a51d-4a3fcd9cb06c	16af909c-1dc1-4308-9bab-956b05a662b4	2	150.00
+5a8a91ed-4e98-4791-b555-21fa0da2f3af	9f2cf2ff-7928-42ec-88d1-3e2a395b6dcb	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+ec86c9ca-e2e7-47d9-acf8-c5352872847b	36233fba-9260-4f38-be8e-1bc15d5f456b	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+9e173468-15fd-4d43-a3b1-709210c23caf	7e2ec897-3786-4e41-9fdc-7a2f835f97fd	86614bc8-c58a-4c04-b967-0b27ca6685d0	2	110.00
+1ade07a6-f5e7-4802-b0f5-4e5daa031fe6	7e2ec897-3786-4e41-9fdc-7a2f835f97fd	46df4193-e178-4047-9e37-094a61abec87	2	80.00
+780eecf4-b358-4dc7-a5b2-a24b4962462f	585b9315-89f7-43cf-9d33-65fdbeafe0f7	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+598e6f02-010b-4eca-a733-d7ad82deba15	585b9315-89f7-43cf-9d33-65fdbeafe0f7	fd370077-789f-4937-bcfb-a54feee1cef0	1	130.00
+e4f92ac1-06b8-4293-a851-d6762ddecaaf	8d0992e8-f6fd-4f3e-88ae-6fddd403ecd0	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	1	130.00
+b3668326-6e9d-4ec5-bd55-efa43d043053	8d0992e8-f6fd-4f3e-88ae-6fddd403ecd0	9c286dd2-e03b-4b2c-b602-a6c59de3d0a6	1	100.00
+f9f038fa-3d5a-4887-a6b2-124c9d38a8f6	8d0992e8-f6fd-4f3e-88ae-6fddd403ecd0	bbe87f4c-497a-4544-aaf9-cb2149605a4f	1	90.00
+03bbaf03-6853-4072-8a7e-7fa372b5204a	9414b7ef-7e77-426b-b635-7274da41b50f	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	3	130.00
+b3d09280-ee90-4717-83a5-2e8bb5f6a297	70a7351a-fd29-4395-a2b3-61e305f887c3	46df4193-e178-4047-9e37-094a61abec87	1	80.00
+8a4a5dca-c34e-4973-a1e1-bc3edf9f4805	71534207-e602-4ada-a47a-adcdf58e8530	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	1	130.00
+a643ec40-b15d-4810-b6da-ac8a3f4dfb92	71534207-e602-4ada-a47a-adcdf58e8530	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+ed036c14-1959-494c-86c6-dc6a8cb4f0d2	3b3bf286-848a-484e-9dae-a3e16113192d	67c84b94-1d15-4c24-9dbb-9be04d472137	3	150.00
+7b273780-9da0-4b6c-ad6f-53b75d62f865	3b3bf286-848a-484e-9dae-a3e16113192d	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	1	130.00
+3817659a-8bc0-4cdf-8958-257b11cc5c16	d55949db-a6d8-47b3-8170-8941d013ff02	86614bc8-c58a-4c04-b967-0b27ca6685d0	1	110.00
+e68b16ea-65ea-453a-a221-080888223355	d55949db-a6d8-47b3-8170-8941d013ff02	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+6ab05b53-c685-4150-933f-257a92610ca8	1ece960f-2e47-4847-ad42-6ec99c8cc1e4	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+024459af-2fa9-488f-b5cb-8ff73b4942a1	139cf2b1-48e7-4d45-a088-ea6dfaacd67e	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+815d9e5c-c3ab-4db5-969c-bbe7b5870ebf	d98e3719-0f64-4176-b16c-96bd566beb4c	60a602cd-5947-43cd-8ac4-4f335f49f2d3	1	150.00
+c8e9f8a3-62ad-4551-99aa-3583d0451985	d98e3719-0f64-4176-b16c-96bd566beb4c	dbbe5416-3202-49c3-b46a-6ddd9a63bca6	1	25.00
+cfc98577-7345-43a1-996d-60af3ed90ae4	62f7cf11-fd91-46f3-9915-d8523ca86874	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+cd32927d-3f34-40df-81d0-3506dd21119d	399ea50b-77e4-4272-8d2c-b82c6fbf0212	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+13926786-e6ec-4eb2-a399-517eb53bbd42	399ea50b-77e4-4272-8d2c-b82c6fbf0212	fd370077-789f-4937-bcfb-a54feee1cef0	2	130.00
+2c19f710-689f-4a63-b92e-2b8c2badc216	399ea50b-77e4-4272-8d2c-b82c6fbf0212	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	2	120.00
+5fbdb25a-44be-4023-bdbc-3d08250918ae	54fb7c97-9ee0-43a2-9f13-8f8dc909b25b	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	2	120.00
+9267b0ca-0bcb-42d2-ae25-dc12c6222a9a	2b85fa6e-d9e2-47ee-98a6-14bf7cafce2f	1afe7b5e-fc8f-467b-9c10-fb2232580c3f	1	120.00
+2786fa4a-8d00-40f5-acea-afc7ddfb4b8d	2b85fa6e-d9e2-47ee-98a6-14bf7cafce2f	5355985a-dc34-413b-8c57-61b38531c825	1	140.00
+1d2231b0-c039-4147-b550-9af571468577	0b12bc10-2de3-455a-a90a-18ccc5a1ef58	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+1ed7d986-e708-4dc7-8a3a-9ebede2b0f91	0b12bc10-2de3-455a-a90a-18ccc5a1ef58	260ec6b8-e242-459c-8758-83e06ffab440	1	60.00
+3f219935-e18d-4f02-9593-1e46357a9f2e	0b12bc10-2de3-455a-a90a-18ccc5a1ef58	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+e1479cba-747e-4eb3-b8f0-2d39efdec6f4	61774896-e0ef-4fe6-8ad0-e236c2cf4ee5	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+8a629c8e-357e-450d-a99b-53715f014214	cbd7f4a0-05f3-47ab-8f10-48b234f9d7f0	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+b18d7e32-4971-4810-a770-8a0274f22e6f	cbd7f4a0-05f3-47ab-8f10-48b234f9d7f0	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+7b24071a-d3a8-4d7f-896a-64a8d5956422	250a8d53-b0f0-4e97-a647-c69a80c7dfb1	67e4e4d2-1e4e-4ad8-928c-99f5a82719b1	1	80.00
+736ea4f5-58eb-4d46-bb1b-d334e8ce6b8f	e4986579-4d25-43e4-acf2-78e8e3596a03	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+1d35d650-6628-4356-a5b6-9532e6bed315	2c4e36c9-544f-4f1f-b76c-963aa0d6673c	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+494a55f2-2ff0-46ac-9d7b-842ea71b8ea2	588a6d17-527a-49c2-99e3-4a755ccea926	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+880efbd0-6670-4a08-bcff-50d71aea1c51	588a6d17-527a-49c2-99e3-4a755ccea926	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+818e36d6-6b38-4f32-9937-5607f9501296	2f327509-fb95-4937-bea2-f2bf35a1cb62	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+0397e77f-1efb-4e23-81d2-e24dc9591d60	78eb71e6-adc7-482f-8ddc-4c923db0547d	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+9c51ab12-9009-4048-9dae-592895940867	78eb71e6-adc7-482f-8ddc-4c923db0547d	5355985a-dc34-413b-8c57-61b38531c825	1	140.00
+d5f66480-de75-48a7-a598-fe3b64d1c0b1	78eb71e6-adc7-482f-8ddc-4c923db0547d	db6af4be-1430-42b7-a034-8dfe19705239	2	25.00
+2352d6de-0350-49f2-8a0e-4a3aad9d4c96	1c429972-f146-4d0e-8d00-f8c19a6d56de	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+f89edfda-e48e-4081-95cc-97216e240ef2	1c429972-f146-4d0e-8d00-f8c19a6d56de	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+f74814d1-538c-4a53-98aa-3c6933e8fd90	21effa0f-1e1d-4bb4-8230-2b33397b1fbb	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+845023e7-efec-44d6-b16a-fedd6d51dda4	1bfb36e8-71c7-4435-89d2-bf99397c3a09	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	2	120.00
+ba25bddf-61be-4043-bd63-a0191426def1	d4255c15-8ae2-4495-bfc4-01ab76ba15fa	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+ffb2ff3f-4697-43f6-be69-ce28ec1a4b92	fd0127d9-082e-4ad0-b099-79cb66422cf7	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+8569951c-f21c-4ab9-958d-71ec96638fa7	24e3ca25-e9a4-41d5-8777-8093e9943ced	260ec6b8-e242-459c-8758-83e06ffab440	1	60.00
+f838408e-06b9-421e-8774-887d6bcb4cbf	24e3ca25-e9a4-41d5-8777-8093e9943ced	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+025f0ca5-b30e-48c7-abc9-8fef6a4a5f87	3a9e3e4b-edff-449b-8518-27b0d85d784c	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+1fec2f0a-af68-4326-94fa-7a9f76f5cc72	2c2614c6-6ee7-4624-a1d7-4c987bfc3a19	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+36719317-111c-4b55-9176-7bba7a5813c6	e95d9e51-e82b-49c9-a33b-b66f5cb8524e	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+7a337051-0740-47eb-a894-cc69702cfb30	e95d9e51-e82b-49c9-a33b-b66f5cb8524e	260ec6b8-e242-459c-8758-83e06ffab440	2	60.00
+d00c9236-6742-4d08-a9df-411af04e5c30	b379b627-9b9c-45b6-beed-8d0387891fc3	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+e55b6627-2480-41ce-8e07-27cf0866b2c5	6af207bc-b219-4788-80b3-20c2c5b3371e	a64fcf53-7b36-4082-9d2a-885c49238770	1	180.00
+83ee2716-c512-444c-8824-f3f16e0b83f3	6af207bc-b219-4788-80b3-20c2c5b3371e	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+dca85232-b921-4925-9383-9f40c828dbbd	79488dbb-f823-4821-bcca-9fa61ef04555	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	2	120.00
+27a8a4f9-7198-4128-bc8c-c8666927588a	79488dbb-f823-4821-bcca-9fa61ef04555	0f8eda0c-3e5e-47f0-a648-542e1fcb0740	1	30.00
+ded22ec8-7811-465d-b935-001b0bd75561	b3bcc025-a5b2-4742-8dc0-944deced9a79	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+ca91b7bc-d9bf-453f-9fe3-c7666cd2dd6e	b3bcc025-a5b2-4742-8dc0-944deced9a79	67e4e4d2-1e4e-4ad8-928c-99f5a82719b1	1	80.00
+660a3a28-ff7d-41fc-96af-b4f27bd80d40	3c86923d-1479-4b13-8aec-bfbd464c779f	260ec6b8-e242-459c-8758-83e06ffab440	1	60.00
+e6857ee0-04c2-4459-958e-b51716c802ca	3c86923d-1479-4b13-8aec-bfbd464c779f	a64fcf53-7b36-4082-9d2a-885c49238770	2	180.00
+b2f0550d-66fd-4b96-a707-60ea5ab93f59	3c86923d-1479-4b13-8aec-bfbd464c779f	67c84b94-1d15-4c24-9dbb-9be04d472137	3	150.00
+6b8c1420-ee7c-40e8-a324-cadc691a3010	8dc7c154-5617-41fb-986d-c4afce95b1c0	86614bc8-c58a-4c04-b967-0b27ca6685d0	1	110.00
+25dad185-dda2-4004-b41e-0292c6a366ad	8dc7c154-5617-41fb-986d-c4afce95b1c0	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+0e0b50d7-c600-4678-9e46-d915bb09a323	e7a68f51-b37a-49a3-b5b0-f30141a3a94f	16af909c-1dc1-4308-9bab-956b05a662b4	2	150.00
+20fcfb9f-3113-4c16-88ae-34ca4d2e6556	0406f2af-5520-485d-b5cd-c3fd94314558	dbbe5416-3202-49c3-b46a-6ddd9a63bca6	2	25.00
+7efc7e8c-6961-4253-83b2-fb9517ce4b17	0406f2af-5520-485d-b5cd-c3fd94314558	260ec6b8-e242-459c-8758-83e06ffab440	1	60.00
+ad03c75f-2e4f-4080-978f-da47c7234d91	4daf0925-0bc0-49fa-aef9-8730326373bb	a64fcf53-7b36-4082-9d2a-885c49238770	1	180.00
+c0f16771-b354-49d9-bcfd-9916dfb20024	4daf0925-0bc0-49fa-aef9-8730326373bb	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+8070a918-4418-47e3-be43-4e2490e098a7	11e30d6b-9c2f-43d8-871f-70153f1aaba0	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	2	130.00
+385e8db5-83e1-440e-a644-7529801d9736	e287c0fc-6ee6-4919-a2fd-562738630eca	86614bc8-c58a-4c04-b967-0b27ca6685d0	2	110.00
+ec09e90c-392a-4fb0-b1b5-6eff7785b293	e287c0fc-6ee6-4919-a2fd-562738630eca	04f75c30-f2d8-4282-9555-795b909a35d6	1	30.00
+41933c47-50a2-4d71-adb5-aa37170053c2	71f44784-d209-4563-8dd2-ff0f5214b1ae	fd370077-789f-4937-bcfb-a54feee1cef0	1	130.00
+d7191658-0494-4867-8b48-2d695a5491dc	373a6730-35aa-4a5c-94e1-84e272137561	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+7b3d6133-f432-4ea6-b747-b680ec2704fd	e7d06703-252b-429c-890c-71da416aea5b	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+45479e42-9dc8-4a0f-92ee-80e23a5643ce	e7d06703-252b-429c-890c-71da416aea5b	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+aed42482-5509-4f49-9707-538252601097	b401e65c-389b-4307-99da-39f9ea1a6a8c	58026580-c7f4-425e-bc91-3649138736f1	1	130.00
+1286aa63-d790-4c3e-b8f1-f2924231ebd9	f895d129-a096-49e2-ad21-43528511c01a	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	2	130.00
+96ae60bd-0244-45a9-8a4b-35f873a05070	cf9b0fbf-c751-4d20-ad3c-c7545469a842	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+51199bd8-be80-4978-bb11-375364a93460	23d4e20c-825d-43bd-af1c-c6d2e36c9e7d	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	2	120.00
+2d764378-c069-4340-b152-7ded81cb57f6	323185f5-3183-4c98-ac17-a4e70aa00e76	d2195246-43fb-48dd-9575-4bca1ee5f195	1	100.00
+c0cdad46-13e8-4676-b968-870d612a56a6	323185f5-3183-4c98-ac17-a4e70aa00e76	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+89e6be0e-a9b4-4fe6-9279-33ed2b76fce3	f3569153-c464-4720-bcd1-018f383ecfac	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	2	130.00
+64847a43-0d73-4da1-8889-654207460d7c	d6f6742d-ffa2-40a2-b5fa-b77e4918900b	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+60152974-a979-418a-8599-48e586941364	66eaaaf0-3eb8-4039-8f08-e1050564c468	dbbe5416-3202-49c3-b46a-6ddd9a63bca6	2	25.00
+849161d7-db83-4171-8ad4-35535dd63473	663796af-2d87-4bd6-a9f4-e2e6e2eb3680	16af909c-1dc1-4308-9bab-956b05a662b4	2	150.00
+d477e5c1-97be-48d3-9677-6af83d2feef6	da7f3996-2417-42fc-9431-0da7316ed934	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	2	130.00
+a4a00858-2834-44ad-9aeb-880f8ec1de1d	467b1423-62d3-4d67-9e39-afbc9f839803	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	1	130.00
+8006e4b3-6d3d-4112-9309-2e9da24eed90	f23e958f-c309-4f4d-b4a3-339ffcdf3c5d	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+1835f22c-3de3-44b3-9eb8-6aadc5601529	f23e958f-c309-4f4d-b4a3-339ffcdf3c5d	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+747b3486-bf84-4497-8a8d-e5ed299c91ed	f2275226-318a-4c03-bb71-b7cbffeb9d06	fd370077-789f-4937-bcfb-a54feee1cef0	1	130.00
+ed9d5026-fb24-46f6-b1e6-9d084274a4a9	f2275226-318a-4c03-bb71-b7cbffeb9d06	260ec6b8-e242-459c-8758-83e06ffab440	1	60.00
+1a4d5240-ef9a-42a8-aa55-b51b168c78f3	0bd34344-bbda-48aa-b4bf-ea1b29a2ff24	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	1	130.00
+b6c099fd-1adf-4111-a90b-863db961ecac	f05b90ee-2118-4d93-8621-81c6bd908685	5355985a-dc34-413b-8c57-61b38531c825	2	140.00
+4377fe83-856a-43d4-8a4b-66be1756abe6	f05b90ee-2118-4d93-8621-81c6bd908685	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+0e9390d1-cf76-4d40-9efa-932e2d8dd3da	f05b90ee-2118-4d93-8621-81c6bd908685	db6af4be-1430-42b7-a034-8dfe19705239	3	25.00
+edc8b85a-0806-4783-9b3c-2cb4aafacf6f	f05b90ee-2118-4d93-8621-81c6bd908685	5b295cb6-2a51-4a65-9a8b-7d34b334ae0e	1	50.00
+be854ca8-c5b2-4cab-9d90-09c7317ae04c	6bce80f4-2be6-4c03-a502-35ed1ca42e32	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	3	120.00
+aac01ae7-dc24-4a20-99b2-865c316fc9b6	16eae660-b8e0-4bbc-a8b0-762cae713359	260ec6b8-e242-459c-8758-83e06ffab440	1	60.00
+b4f37bea-a93b-4d13-bdca-fc537129be9a	fea4cf94-1533-4e56-b022-5e64996eb1a5	fd370077-789f-4937-bcfb-a54feee1cef0	1	130.00
+3ba8a148-d159-43c4-b0b2-c40312de4a62	03b2615b-3839-40c2-8bc8-c2e6177f136e	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+ffd0d477-159e-4895-9365-9be54298f2ed	90322330-29a4-45d1-9e33-26f2ed5c9bd0	fd370077-789f-4937-bcfb-a54feee1cef0	1	130.00
+0542321b-bf97-4304-b260-6696b614d90e	8da04a1c-7e9a-4faf-9a20-ef053b013ce5	58026580-c7f4-425e-bc91-3649138736f1	1	130.00
+41aa02bb-d773-4135-8f8f-8d0351f5e862	8da04a1c-7e9a-4faf-9a20-ef053b013ce5	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+d4f10815-40ee-434f-8df2-01b1622d64f9	c36866b8-5d0d-48d5-b5ce-c16fb0c775bc	46df4193-e178-4047-9e37-094a61abec87	2	80.00
+f623c83b-cd05-4ead-82b8-48af1e5edd74	cd7cb672-f24d-4f87-ad50-3e6e4df07b37	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	2	120.00
+382d9355-0cd5-4c5f-a075-74da2cfb8354	cd7cb672-f24d-4f87-ad50-3e6e4df07b37	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+3e633143-3a12-404a-a40b-772437ae32ca	b85daca3-916e-43f9-a73f-322c90273d56	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+bd4e3d81-f10e-4625-b3b2-e9808e6623b4	714c2033-aebc-4b70-b758-9446c3c2acd3	5355985a-dc34-413b-8c57-61b38531c825	1	140.00
+4f58b1f9-f68a-4bb0-aee1-32a22b42c1ca	714c2033-aebc-4b70-b758-9446c3c2acd3	67e4e4d2-1e4e-4ad8-928c-99f5a82719b1	1	80.00
+f5ae3ea6-130e-45c5-bedb-162a3b7c039c	714c2033-aebc-4b70-b758-9446c3c2acd3	260ec6b8-e242-459c-8758-83e06ffab440	1	60.00
+50d71bd7-5b7e-4b8b-b7ff-b75df5195ec2	ae904beb-4fce-4a82-9353-88f1a7c1a86d	af851898-d21e-46e6-9637-1b639f7a4db2	1	100.00
+ab1214c4-54d5-4a9b-9049-f45e730e3c8a	78ec3612-1514-46d9-988a-61307ee1f4ab	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+095f3f74-ab9c-42d1-8c93-e2ca1510cffd	78ec3612-1514-46d9-988a-61307ee1f4ab	58026580-c7f4-425e-bc91-3649138736f1	1	130.00
+c313bd47-89ce-4c0b-9962-358a77e130f2	80b7f4ae-e223-43ca-b84f-c393290fc1fb	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+f013509b-8327-45a0-a857-c63dbfec48ed	643a4c80-6706-4556-baab-37685114cae5	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+d431718d-d2cb-4096-8665-ee15803de579	90a9d82b-9988-441a-9cb8-40739caf260e	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+292133e0-0e49-4611-b866-70051fe7dbdf	90a9d82b-9988-441a-9cb8-40739caf260e	46df4193-e178-4047-9e37-094a61abec87	1	80.00
+965218b9-178f-4977-a91b-d5d8a6cf7c4f	ac30d106-e6cc-4946-a525-93df0ae30f47	fd370077-789f-4937-bcfb-a54feee1cef0	2	130.00
+1edfb711-711c-4678-99c3-cc83e2d7e767	ac30d106-e6cc-4946-a525-93df0ae30f47	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+321f19f8-efb5-4ce0-972f-03420b577d54	b4378aa6-a444-4b39-bce0-269bfd266e65	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+8451b7af-ab62-4875-8fb8-37cccd34d951	b4378aa6-a444-4b39-bce0-269bfd266e65	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+42e839d0-54fb-478b-9298-4efeb11a6a6d	0d6a0e70-c53b-4cd1-b621-c8402b5784e9	16af909c-1dc1-4308-9bab-956b05a662b4	3	150.00
+d737aaf0-e886-4444-a832-0647d9ebc582	ae2e9c79-3a7e-40f1-a342-789d9e5af2e4	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+72008a12-7a0c-4188-8f94-8577a7d0400e	ec6c3c34-b104-494c-bfa0-d789640c0b89	a64fcf53-7b36-4082-9d2a-885c49238770	2	180.00
+21342707-da85-4ea3-bcfc-f7e5107b6e29	2b020f4a-4469-428e-bf06-9ec4c8fbb225	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+446c0af4-ee7f-4705-884a-69ddb42ea05c	b5aef338-2745-48f7-8420-4385b2f69210	1ab809d0-6ab3-4fe2-8420-18adeed5e476	1	100.00
+95dea3cd-b5f0-4012-afa4-8e2fb3de37af	00695a7f-3b60-456a-bfa4-304e6ee186be	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+117b561f-aa37-4622-be09-78241b182a7e	00695a7f-3b60-456a-bfa4-304e6ee186be	5355985a-dc34-413b-8c57-61b38531c825	1	140.00
+0b67d1cf-e340-45a6-b2de-7b105f0ab406	eed60154-33d7-4d5a-b57f-f135998b6105	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+c7c4118a-4edf-4743-93fb-30e4d9bed281	06d2de58-e9f6-4dc9-a313-ac1c0cc64a00	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+57a8bcc8-4278-4ca8-bfa0-deceb73a37db	06d2de58-e9f6-4dc9-a313-ac1c0cc64a00	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+f9258c98-8193-4278-b878-d45b8bcd6e91	03eb12f7-7174-4fd6-94ce-4caf5a3205c9	67c84b94-1d15-4c24-9dbb-9be04d472137	4	150.00
+37595616-c403-47c2-b779-06809d94432c	03eb12f7-7174-4fd6-94ce-4caf5a3205c9	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+fb05d0c3-2fce-4ea8-9908-ad4b253134b4	03eb12f7-7174-4fd6-94ce-4caf5a3205c9	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+22f92bba-1d45-471f-a571-cb75e1ddd322	f068e6b3-4222-4aa8-8f34-a62797aebb05	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+e6997ac5-2d42-4004-a1a4-7e76ac6c4e75	c2cf3d48-d33e-4c6d-8dad-8bbf4fe2982d	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+fb8ffbb7-2312-4419-b34f-92cbd15ba7db	2812887e-5f4b-49af-bd17-6fce262c7d9e	fd370077-789f-4937-bcfb-a54feee1cef0	1	130.00
+dfb6af24-e289-472c-a024-36088468cf8b	2812887e-5f4b-49af-bd17-6fce262c7d9e	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+525b4e29-a5b8-479b-b6d8-f132852f8eed	a5b5d193-be8a-4692-804f-72ed71118030	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+e48ec011-9fea-4a1a-a8a9-201dd9e69d83	413cf718-88a5-4d5d-8800-93fe093c8c65	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+04a7a394-9ce0-44f3-b53e-ef6d001abfbe	d3a459aa-b0f1-43a2-acbd-942d11add4b3	67c84b94-1d15-4c24-9dbb-9be04d472137	3	150.00
+43ba3832-b13a-4360-996f-49f684ba687b	d3a459aa-b0f1-43a2-acbd-942d11add4b3	0f8eda0c-3e5e-47f0-a648-542e1fcb0740	1	30.00
+9a4056b7-2c69-4b53-a321-050a1e37157f	e4682983-6523-4184-b39c-11a3ba0877c4	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+b276c276-d6b5-4dcb-919e-4f70927519ca	d3283cbf-a221-4a59-89ba-10b1e4f20d1f	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+2d66afcf-cc3a-443c-b6b8-9db4d11001ec	b29cd282-553d-4ef4-93c2-af483466e02b	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+73bbfdac-28e6-4654-bcd9-e799153d5d3c	b29cd282-553d-4ef4-93c2-af483466e02b	db6af4be-1430-42b7-a034-8dfe19705239	3	25.00
+0b1eef98-961a-41d1-a40a-a31bc66cb044	45054444-5aba-4f9b-9c01-383b3c5f648f	67c84b94-1d15-4c24-9dbb-9be04d472137	3	150.00
+f8acac26-113d-4697-80f2-fb6086fba79b	45054444-5aba-4f9b-9c01-383b3c5f648f	1ab809d0-6ab3-4fe2-8420-18adeed5e476	1	100.00
+8112dd71-79b1-4b72-8c05-28fc2dc86c52	c1ec0873-cde3-445a-bccc-c62feac904b6	dbbe5416-3202-49c3-b46a-6ddd9a63bca6	4	25.00
+bd2b89af-c9ff-4f1f-83cc-a50c9b2a7a65	9c56bf16-4f6d-43b7-9e89-c05e479ee22c	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+c9689b03-86f4-4df8-96dd-814d1f43097e	9c56bf16-4f6d-43b7-9e89-c05e479ee22c	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+ff5b2745-3aff-493f-8266-399e720fcaa2	c7027e39-18ea-4b33-a86a-1297806f54b4	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+c93407b1-1c7c-4142-a5d9-e009bf6f08c1	103b5f17-14b5-4255-bede-9ca9f011238f	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+18c1e15c-aaf2-4634-8eb4-f310efba8c9e	9940dd7b-6d37-4e8b-95a4-2dda2ee6fc65	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+2eb7bca1-d904-4cc1-835d-f211909df22a	9940dd7b-6d37-4e8b-95a4-2dda2ee6fc65	1ab809d0-6ab3-4fe2-8420-18adeed5e476	1	100.00
+d1beadce-ffec-4006-a835-8890f85fa25c	7cf60ee1-4d00-4b1b-b37e-f783503d0c53	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+fa836019-2308-4c8b-b52b-f8860461643e	7cf60ee1-4d00-4b1b-b37e-f783503d0c53	1e93797c-d398-4c07-a0e4-5e25771abcb5	1	180.00
+46debf28-8502-4c67-936a-63f133967ef1	eb3fc739-94e0-4953-840c-41bf69c7852a	86614bc8-c58a-4c04-b967-0b27ca6685d0	2	110.00
+e34828bb-2b37-40ec-81bb-8013ae9d8227	bd604788-b2ec-42af-8786-f8e071982a0c	67c84b94-1d15-4c24-9dbb-9be04d472137	4	150.00
+b6dd00c5-094d-4778-ac6a-466991db7005	3f0f0143-5d3a-4ccb-b1d4-9e6d2f04f152	5355985a-dc34-413b-8c57-61b38531c825	1	140.00
+ad108d4c-881f-48a0-94e8-07e506219f47	3f0f0143-5d3a-4ccb-b1d4-9e6d2f04f152	f77cc3ad-6f01-49af-b8d3-e4a81d9eba78	1	150.00
+1ed2bc97-d781-42d3-8494-1f2996fdf122	b2b0b987-6ab6-42db-a386-6d0cbc54bf02	f77cc3ad-6f01-49af-b8d3-e4a81d9eba78	1	150.00
+150b239c-9f01-4fd7-8bea-638435e85d1d	b2b0b987-6ab6-42db-a386-6d0cbc54bf02	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+7f3e4427-57c4-49fd-ab0c-44ab6be5e6d6	eafa278e-5174-4f5b-8ff7-0b0fe04430f5	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+50e7c8c2-cf8d-4c03-89fe-52ffcab3fca4	afc7a759-aa83-4567-89f5-1d4e79cfbfb7	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	2	130.00
+3422293c-3c67-4f2a-99e8-710f21c55187	afc7a759-aa83-4567-89f5-1d4e79cfbfb7	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+0cfa15d6-d2cb-4e3a-a42e-dc109bdac640	606f27c6-897a-4c6d-ae28-79c958323625	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	2	120.00
+83a8a21c-8c27-473d-a104-c5fdec71d499	606f27c6-897a-4c6d-ae28-79c958323625	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	2	130.00
+fca96161-6adf-47d3-b844-fe665ead8a4b	01371182-4dad-45cb-ae2e-9fcbd9419487	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	2	130.00
+a2ed2f34-3d4c-44c0-b0c6-bb73f47830b5	1538f469-3889-486a-9b3f-7c4e0b6e1892	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+662e38aa-d6b7-4ded-8a49-352a0d3e1dbe	1538f469-3889-486a-9b3f-7c4e0b6e1892	a64fcf53-7b36-4082-9d2a-885c49238770	1	180.00
+d201cfd7-11fe-448e-bd6d-d239092ee9e7	6aa4fcf1-9086-4f87-afa6-0bf5ae29438f	67c84b94-1d15-4c24-9dbb-9be04d472137	2	150.00
+8bbf9522-0727-476c-8fb9-399929e01465	267cd979-be13-461d-9d5e-0c8b4e9c534b	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+1124a6ae-6beb-4ff0-8b19-8f104d07fd80	d392937c-902a-4725-bddd-95f9f58aaf1f	16af909c-1dc1-4308-9bab-956b05a662b4	2	150.00
+7028f6e4-9bf3-487a-be2c-6350690cd3fe	da089c7c-668b-4046-8c76-8743f2c1866a	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+448234ba-b2e6-4594-8385-67fa19919a2d	7d87188e-eb12-41b5-80bd-8c3bbb54d999	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	2	120.00
+dbd6b4b5-069a-4285-a26e-4b408e8c5f20	59005f30-956a-4ff3-a744-0279cff4df0f	9c286dd2-e03b-4b2c-b602-a6c59de3d0a6	2	100.00
+eb57c0dc-42e9-4c9b-913e-720ebe438f96	c4d1834a-9e33-460b-aa84-3981c902cc08	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	2	120.00
+77f82776-7fe7-4a90-b0de-02849022e966	698c9a7e-410e-46fa-9442-466e9156c0f4	fd370077-789f-4937-bcfb-a54feee1cef0	1	130.00
+ad01040a-26e3-46c6-a122-dc58ca087d42	698c9a7e-410e-46fa-9442-466e9156c0f4	58026580-c7f4-425e-bc91-3649138736f1	1	130.00
+5b9c0477-aed9-493a-b2a3-5b90c6e633d1	0dde5d48-fcf8-49ad-bf65-bb80f01153a0	1ab809d0-6ab3-4fe2-8420-18adeed5e476	1	100.00
+00fa5005-4d70-4c18-8f17-5339c4f4bc8a	e3ce5ee0-cd27-419a-8e94-a708f7d6eff1	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	2	130.00
+ec68b269-ee9d-42c4-b963-6453a10801a5	b761db1e-7eb4-448d-9caf-c2e0be05fc32	bbe87f4c-497a-4544-aaf9-cb2149605a4f	1	90.00
+83d09a44-b853-4e9f-a8ff-6983b768c69c	b6e3bfbd-2923-4f04-a2fb-af0df9981060	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+dd074d3b-b5d4-4988-a025-e5d221d92a85	b6e3bfbd-2923-4f04-a2fb-af0df9981060	5355985a-dc34-413b-8c57-61b38531c825	1	140.00
+c676eaa1-5005-4078-9918-24c070fb5c9d	2ca51dcf-4cb7-4253-8694-84a298046ec0	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+792c4c55-8542-4b55-a75c-ac085167a4ca	2ca51dcf-4cb7-4253-8694-84a298046ec0	dbbe5416-3202-49c3-b46a-6ddd9a63bca6	1	25.00
+0903992a-582d-4834-8cc7-c78a356d5ae6	250d869a-550c-49ad-8860-4c1f6a07eeec	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	1	130.00
+f5eebcfd-ff1a-4517-aa13-4b47fcc7383c	44e797ed-3cb3-4d82-a602-bab5f765df24	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+a020927c-073f-4c93-9c7f-24680ee84f0e	006d5a2c-df8b-4044-9eb9-b954d9d89898	16af909c-1dc1-4308-9bab-956b05a662b4	2	150.00
+1c33f813-f78f-4a44-ac96-4c50505fbf2b	67e717a7-deb9-41f9-a03d-3ceb88473ad3	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+6e56eaae-cbdb-4d23-9fcf-4f3cea764526	67e717a7-deb9-41f9-a03d-3ceb88473ad3	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+a7b0fa03-8565-4d09-b23d-b9ccba2f7e9d	a0ed406e-30d3-46bd-8f19-5798e8fe6763	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+526498ad-17e7-42a0-b860-06d2051b0498	a0ed406e-30d3-46bd-8f19-5798e8fe6763	9c286dd2-e03b-4b2c-b602-a6c59de3d0a6	1	100.00
+e35bfb7b-98db-415f-a62f-c275be991f94	4e38aab2-62f8-45ad-8c48-3b9d5381f9a3	a64fcf53-7b36-4082-9d2a-885c49238770	3	180.00
+0e47dd10-36b2-4f20-ae99-e12c618e75e8	7cefe855-e851-4b4f-88b0-cf59169572d6	db6af4be-1430-42b7-a034-8dfe19705239	2	25.00
+163787af-b663-4883-b1de-202f777e3c9d	39b53b9c-5c78-4578-8262-6f2396a78307	16af909c-1dc1-4308-9bab-956b05a662b4	3	150.00
+1bb7f07b-32fe-4b28-aa42-b20f0ee9dc01	12e5341c-fc40-484e-bf37-437d71fa27b0	61e37740-3490-483c-a847-8576eba81f92	1	120.00
+04d6c80b-edf0-459a-9b82-8862909a98af	12e5341c-fc40-484e-bf37-437d71fa27b0	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+a9620ac3-98b7-45bf-a6b8-031c97c7997d	b0764b98-730d-47f0-b5f7-2aca306567ac	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+e795d13e-55bd-45b3-8d35-554882083a82	b0764b98-730d-47f0-b5f7-2aca306567ac	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+ba1d0921-2d60-4bdb-915d-4b935d9d0080	3795f035-0a7b-4c52-b8f8-362de5698d56	db6af4be-1430-42b7-a034-8dfe19705239	1	25.00
+0cf848d9-a64e-446e-9a6f-4634828dda4a	cecf04ed-29b9-4f8e-8972-f6f39e9e06b6	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	2	130.00
+813410e3-e8fd-4a24-b598-72d27e8e0dce	cecf04ed-29b9-4f8e-8972-f6f39e9e06b6	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+cecab547-43df-45de-8199-5ce623ece729	b29cf2aa-6dc4-44cd-907e-adca5afd320b	9c286dd2-e03b-4b2c-b602-a6c59de3d0a6	1	100.00
+1e5ae00e-116a-44d7-a45c-b65908dcfc82	436c3e95-c38c-4f4c-ab5a-29afcc628e1c	86614bc8-c58a-4c04-b967-0b27ca6685d0	1	110.00
+2e8bcb1c-051c-4f4f-9168-a33d4309befe	d01afcbc-c6fa-4c58-b62b-b411e0249537	61e37740-3490-483c-a847-8576eba81f92	1	120.00
+d1880891-971b-44e3-b676-51e259546259	d01afcbc-c6fa-4c58-b62b-b411e0249537	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+5fc4c167-1f9d-4f21-b7e3-284fcaf2d89e	e53a9105-74a3-46df-b86d-5b1e36f9597e	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	1	130.00
+2658aa05-ec0a-4aef-a019-5cf394d47860	e53a9105-74a3-46df-b86d-5b1e36f9597e	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+046f2869-9020-4c75-87ff-77222fa30abb	fbc6d492-eac0-4d2b-b61d-4820fdd3ec76	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	5	130.00
+0a3b4efc-7829-43b6-a94b-11af02e4729c	a82e85c6-3aa1-4fd3-8901-f22a16ab72e8	46df4193-e178-4047-9e37-094a61abec87	1	80.00
+2b3d765d-f7aa-4c11-9302-eb05656ddfd1	a82e85c6-3aa1-4fd3-8901-f22a16ab72e8	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+5cbce8b0-cdb9-4792-8c28-774afd2e786e	da11451f-f854-4914-be6d-cbf307f9e444	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	2	130.00
+e650b18d-7c80-445a-9a62-afd08d52d19f	b5d6eca8-6e34-41de-9172-2678a9a858be	16af909c-1dc1-4308-9bab-956b05a662b4	2	150.00
+23842a7d-6fd6-4afd-8316-78f95956a5f5	b5d6eca8-6e34-41de-9172-2678a9a858be	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+aa6c1d0e-1d5c-4c55-810b-7d33d351e819	31336e82-4b87-4a7d-b9cd-8068b68a9920	9c286dd2-e03b-4b2c-b602-a6c59de3d0a6	1	100.00
+8059bc60-5238-4682-a110-5b244c6215ac	31336e82-4b87-4a7d-b9cd-8068b68a9920	db6af4be-1430-42b7-a034-8dfe19705239	2	25.00
+65509140-d4d5-4195-9b0e-4f8343429e55	6754679a-3ee1-4a16-9504-31407687cf53	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+518d2c57-faa9-48fd-8f7a-4edb6fd110f6	6754679a-3ee1-4a16-9504-31407687cf53	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+ffcacc58-946e-494d-9f3e-ca472b39ade1	d3870373-349c-475f-a677-52b9ca64716f	67c84b94-1d15-4c24-9dbb-9be04d472137	1	150.00
+8eddeb18-f557-4c8b-ad0a-988c6a77d5d6	d3870373-349c-475f-a677-52b9ca64716f	9e2b0e2e-5fb8-4361-ae78-ded806532e3b	1	120.00
+ee6f0e8b-38a8-449d-92ec-6de48fd24bcc	d3870373-349c-475f-a677-52b9ca64716f	9c97fba0-1d5a-49fb-8ad2-46222c45c6d7	1	130.00
+da677715-e978-424a-9cc3-05f339e6b53c	d3870373-349c-475f-a677-52b9ca64716f	16af909c-1dc1-4308-9bab-956b05a662b4	1	150.00
+1815fede-778e-478c-82d7-f32bae6432d8	d75905cc-e54f-4941-b8c5-2f51c63f9ac5	a8718201-b75b-45f4-876f-ccd1fde2fc13	3	40.00
+fe0e10ea-3b1e-4f99-825b-857b39ffb99c	96407d82-0a50-43ba-8419-fb1948ee0d4c	61e37740-3490-483c-a847-8576eba81f92	2	120.00
+4377e419-a4d3-4b15-be80-d41193cbe264	16c2cef7-0ec3-4643-90f1-39d59b044b38	fd370077-789f-4937-bcfb-a54feee1cef0	2	130.00
 \.
 
 
@@ -442972,6 +443440,221 @@ c7133d13-9dd8-46c6-8da1-c589366b5a59	8780a3b0-f51d-422c-a5cd-8c415bbffb44	b01569
 f5e325a8-cab4-47e9-8530-237bde997a16	833b08e5-4367-4703-a496-8e56a996ad52	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-22 19:47:25.314347+00
 78284645-f5a9-41f6-9bd3-b57cdb527bec	8e079500-3a44-4aae-a15f-8771085fc4f7	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-22 19:50:34.680275+00
 edd2da25-b6e5-4328-9950-f212725121d6	46b198e4-57bd-4ecd-a610-cdd455ec5b08	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-22 19:55:17.523014+00
+4170c6ff-f2e9-4a27-b282-b8d4595aff7c	210517b7-0efe-4198-83aa-5f6193af039b	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 07:58:53.840512+00
+c1ca9928-f40b-40cf-a4eb-0db2fcd8ffcf	048de253-625e-4198-ae69-a50ebb596754	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 07:58:54.963466+00
+bb16c529-4aa7-4530-95be-920b09d08d53	aea3dbd3-f0d1-4fcf-8886-e827a219d77c	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 08:28:47.777342+00
+927ef33d-303f-4eaa-9ccd-f500d0872248	46a3edae-ae1a-4876-b1a1-b8029e935070	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 08:28:48.671304+00
+9aca3a39-d036-409c-9fb3-539f65863574	796c7514-6bc7-473d-971b-a64a8fda5f18	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 09:04:17.408696+00
+b4e44474-58a1-4654-93f2-71ec33b239d2	bae8b1d4-dd02-45d0-991f-20386d37a07d	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 09:04:18.377566+00
+b7752c4d-93fe-4cd6-b81b-e05026a6f329	74ed26ab-87a2-4c1e-9956-8613c109a4ae	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 09:14:17.255106+00
+7a0a055f-2fa8-46f9-80e9-6d54da241d47	820fe503-3aa9-4fa3-a57e-dcda55274a06	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 09:15:58.224868+00
+4605e2c7-f3d0-4b93-bf36-dd1f4d406140	95a45c78-b65a-4f55-b763-01c7ca385003	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 09:15:58.933236+00
+cc6ea7ba-970c-4abf-8dbe-49e1b1dd1e0b	219d6cbd-65ab-4d23-9c79-111ab8acad6e	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 09:21:45.225767+00
+b75f3f00-6fb0-4f61-98a3-bf5885f39cda	5a8a91ed-4e98-4791-b555-21fa0da2f3af	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 09:22:27.698122+00
+3c594838-195a-4647-af02-5e69c302833b	ec86c9ca-e2e7-47d9-acf8-c5352872847b	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 09:28:22.774824+00
+8feb12ed-67d8-4253-b8c6-ddfdc80a0c44	9e173468-15fd-4d43-a3b1-709210c23caf	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 09:40:53.502891+00
+165b4457-8984-4de1-8a29-6ba32708a1f9	1ade07a6-f5e7-4802-b0f5-4e5daa031fe6	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 09:40:54.359214+00
+4bed461c-7b74-44c2-974c-1270c486fe06	780eecf4-b358-4dc7-a5b2-a24b4962462f	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 09:52:37.117745+00
+3f0e8d79-7630-4f0d-b50d-db4e87583494	598e6f02-010b-4eca-a733-d7ad82deba15	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 09:52:37.827922+00
+f12283b7-cc29-4d46-a94f-4ec2b728ac5d	e4f92ac1-06b8-4293-a851-d6762ddecaaf	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 09:56:58.371276+00
+cdd2d0f0-abeb-4a73-8302-f6bab839f511	b3668326-6e9d-4ec5-bd55-efa43d043053	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 09:56:59.22112+00
+f0cfbd3c-0284-43e7-a5a9-cb7c0bd4e993	03bbaf03-6853-4072-8a7e-7fa372b5204a	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 10:01:16.46729+00
+78aa988e-15bb-4116-b2d2-36c87a1cfd04	b3d09280-ee90-4717-83a5-2e8bb5f6a297	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 10:03:03.631335+00
+b9270276-8bb6-467f-8f78-38a9a327f530	8a4a5dca-c34e-4973-a1e1-bc3edf9f4805	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 10:08:57.164451+00
+eea23d36-5fcd-4a51-acd7-d14a93c75110	a643ec40-b15d-4810-b6da-ac8a3f4dfb92	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:08:58.036689+00
+6793c337-1391-4c8d-992a-913defb39744	ed036c14-1959-494c-86c6-dc6a8cb4f0d2	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:13:35.421158+00
+c6e8e0d3-6c72-4d0a-8357-a1fee75fd760	7b273780-9da0-4b6c-ad6f-53b75d62f865	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 10:13:36.233694+00
+81640999-0c3d-4d57-964e-35c81f0b1df7	3817659a-8bc0-4cdf-8958-257b11cc5c16	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 10:16:27.2455+00
+617ee2dd-a62d-4ff3-88e5-4fdbec462fd4	e68b16ea-65ea-453a-a221-080888223355	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:16:28.126735+00
+ef9c78ae-5335-4047-89f3-34f23e720bc8	6ab05b53-c685-4150-933f-257a92610ca8	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:18:31.039075+00
+fd8607c5-a09a-45da-9a13-d34815fc9ade	024459af-2fa9-488f-b5cb-8ff73b4942a1	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:20:28.233082+00
+cbaade57-8f35-4a23-b28c-31ec34df90c5	815d9e5c-c3ab-4db5-969c-bbe7b5870ebf	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 10:22:54.782567+00
+3135e812-ac0c-4335-b46e-50669165e43b	c8e9f8a3-62ad-4551-99aa-3583d0451985	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 10:22:55.30579+00
+e459c2da-2ded-4f9c-b4cb-b91e2cab6d31	cfc98577-7345-43a1-996d-60af3ed90ae4	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:25:24.829972+00
+ab737a6b-57eb-48e1-931d-1e52689105bf	cd32927d-3f34-40df-81d0-3506dd21119d	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:29:17.926774+00
+ffb54951-9c0e-4ce1-b585-72b91f140173	13926786-e6ec-4eb2-a399-517eb53bbd42	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:29:18.910172+00
+496ef299-9ca6-4473-bb70-d6d37903c24b	2c19f710-689f-4a63-b92e-2b8c2badc216	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:29:19.516935+00
+f2ed6b3e-6065-4b11-909f-117dfae8b853	5fbdb25a-44be-4023-bdbc-3d08250918ae	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:31:40.489261+00
+755abf93-0a84-4895-b8d7-c622a7097e3d	1d2231b0-c039-4147-b550-9af571468577	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 10:34:35.29755+00
+f7655615-798a-46a9-9806-d30d1c43edc4	1ed7d986-e708-4dc7-8a3a-9ebede2b0f91	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 10:34:36.097634+00
+0f2be62a-7557-4471-93c4-e03a507ecd1b	3f219935-e18d-4f02-9593-1e46357a9f2e	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:34:37.069408+00
+2721b3bb-9322-45b2-97f5-7a8322acd5ee	e1479cba-747e-4eb3-b8f0-2d39efdec6f4	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:38:59.871658+00
+17d4942a-47a7-44ec-8172-e021ecd35461	8a629c8e-357e-450d-a99b-53715f014214	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:40:46.125127+00
+c96abd13-635b-48c2-9a73-a9a51b332ea4	b18d7e32-4971-4810-a770-8a0274f22e6f	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:40:46.948575+00
+58d2dc8a-95b5-4e1e-8ec0-6ae3bd9f3179	7b24071a-d3a8-4d7f-896a-64a8d5956422	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 10:41:47.714429+00
+d0fc4182-43d1-4987-a403-02c2f504d2e5	736ea4f5-58eb-4d46-bb1b-d334e8ce6b8f	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 10:42:35.376869+00
+f61e8d78-9dcb-4a50-8ab5-5039c5bb0a3a	1d35d650-6628-4356-a5b6-9532e6bed315	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:46:12.431162+00
+430325e8-6193-455c-8ebf-5cb6611449d0	494a55f2-2ff0-46ac-9d7b-842ea71b8ea2	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 10:47:42.160433+00
+63f5caf6-ab6a-4a45-8944-15e59a22b588	880efbd0-6670-4a08-bcff-50d71aea1c51	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 10:47:42.849238+00
+d9376321-9422-4b9f-91b4-cdd9b3e53126	818e36d6-6b38-4f32-9937-5607f9501296	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 10:55:55.318739+00
+74851adb-1ca6-4a89-8c0f-502ff4d0bf53	0397e77f-1efb-4e23-81d2-e24dc9591d60	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:00:31.293197+00
+c4fbd842-0e0f-4c88-93b2-9ab2980f5c56	d5f66480-de75-48a7-a598-fe3b64d1c0b1	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 11:00:32.533749+00
+3327f755-9b43-4c83-b019-9011fcc0fb46	2352d6de-0350-49f2-8a0e-4a3aad9d4c96	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:12:16.695361+00
+4df6059d-b193-435a-ac7e-48a951604aa8	f89edfda-e48e-4081-95cc-97216e240ef2	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:12:17.728934+00
+c17e46e5-e439-463c-9434-08fb86f2f2a1	f74814d1-538c-4a53-98aa-3c6933e8fd90	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:14:32.611422+00
+dd0dab8d-eb70-43ba-ab60-68e9c3d13a63	845023e7-efec-44d6-b16a-fedd6d51dda4	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:16:11.232114+00
+130318fa-eb0d-45d6-b62f-af505dbd415a	ba25bddf-61be-4043-bd63-a0191426def1	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:36:16.520672+00
+24245f23-b046-46bc-90b4-c2873d4f1273	ffb2ff3f-4697-43f6-be69-ce28ec1a4b92	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:36:31.529351+00
+5360d610-4182-4fe4-9692-0e56e187f4c6	8569951c-f21c-4ab9-958d-71ec96638fa7	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 11:43:02.238145+00
+7b14a4d1-394b-4364-87a6-22c806534bc4	f838408e-06b9-421e-8774-887d6bcb4cbf	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:43:02.915792+00
+b51799cf-9e4d-4b49-bbf3-1fb1de9397ec	025f0ca5-b30e-48c7-abc9-8fef6a4a5f87	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:44:05.766614+00
+cd220524-ec01-4b64-897c-ef335de9809c	1fec2f0a-af68-4326-94fa-7a9f76f5cc72	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:45:48.688033+00
+3da3013f-04f2-4129-852e-e4dfe1d49441	36719317-111c-4b55-9176-7bba7a5813c6	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 11:49:14.174159+00
+645e0d37-d776-4545-bb3d-ce00334abe17	7a337051-0740-47eb-a894-cc69702cfb30	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 11:49:14.977709+00
+2a3d4a4d-c709-46e3-8b3e-4e06d1dd8093	d00c9236-6742-4d08-a9df-411af04e5c30	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 12:00:49.057789+00
+145398f4-319a-48a2-a148-6ae20a74c897	83ee2716-c512-444c-8824-f3f16e0b83f3	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 12:04:28.126746+00
+dcab731a-0ce6-403e-97b6-0a487c0e93f8	dca85232-b921-4925-9383-9f40c828dbbd	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 12:13:01.55943+00
+1d6d7159-bb95-415d-826d-8687762604e5	ded22ec8-7811-465d-b935-001b0bd75561	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 12:15:40.210159+00
+4e3f6428-750e-4c39-b97c-7764a3cfb0ce	ca91b7bc-d9bf-453f-9fe3-c7666cd2dd6e	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 12:15:40.852127+00
+225a8e34-f07f-42ab-a768-f99590a1b83d	660a3a28-ff7d-41fc-96af-b4f27bd80d40	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 12:41:41.035799+00
+3918b553-0df4-4b7e-b1a4-e08cf876b976	b2f0550d-66fd-4b96-a707-60ea5ab93f59	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 12:41:42.536363+00
+f45a6d94-1508-4601-a476-1ee8d4eabec5	6b8c1420-ee7c-40e8-a324-cadc691a3010	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 12:44:03.782689+00
+6de10689-47c7-409e-9257-000b076d4cf9	25dad185-dda2-4004-b41e-0292c6a366ad	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 12:44:04.859125+00
+9bf6e709-b86a-4c2f-8a37-fde56bc98270	0e0b50d7-c600-4678-9e46-d915bb09a323	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 12:49:54.004004+00
+657de44d-6554-411d-ba04-db4fb0bdc7b5	20fcfb9f-3113-4c16-88ae-34ca4d2e6556	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 12:52:42.306053+00
+667d76ab-95f9-4ddc-906b-2628f7c3f4eb	7efc7e8c-6961-4253-83b2-fb9517ce4b17	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 12:52:43.400919+00
+78968009-0b6b-41b7-9369-13c3b23854f7	c0f16771-b354-49d9-bcfd-9916dfb20024	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 13:02:07.678994+00
+fe15c3ab-8136-4689-84bf-68a726a92bc9	8070a918-4418-47e3-be43-4e2490e098a7	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 13:02:58.665377+00
+00fe297f-444d-4446-9131-bd8a29872f24	385e8db5-83e1-440e-a644-7529801d9736	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 13:03:39.80439+00
+dd4d0d0f-9e1d-49a8-8ed2-3608278dcec8	41933c47-50a2-4d71-adb5-aa37170053c2	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 13:05:53.346839+00
+8fab1e77-d3d5-4cf5-9f93-03073f5adc16	d7191658-0494-4867-8b48-2d695a5491dc	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 13:22:10.288626+00
+bce30a98-f51b-45b5-bd16-4c3d18ab4c59	7b3d6133-f432-4ea6-b747-b680ec2704fd	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 13:22:49.432016+00
+29809a7a-5f8b-4014-9140-c4640b589012	45479e42-9dc8-4a0f-92ee-80e23a5643ce	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 13:22:50.404917+00
+7c41f529-af5d-47fa-88f6-843b86cd0486	aed42482-5509-4f49-9707-538252601097	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 13:23:08.212094+00
+df42137f-2fa6-411d-b322-d40f6e792d3e	1286aa63-d790-4c3e-b8f1-f2924231ebd9	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 13:25:01.572735+00
+a00c670f-c518-4ead-bced-8ffa0584fbb6	96ae60bd-0244-45a9-8a4b-35f873a05070	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 13:25:23.967388+00
+c01dd448-96ef-4ff1-a751-5144e29aac71	51199bd8-be80-4978-bb11-375364a93460	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 13:31:06.623549+00
+565ad4c9-3e87-4367-aafd-0d4d913c9498	2d764378-c069-4340-b152-7ded81cb57f6	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 13:33:07.42605+00
+4c28df71-fcc5-40b2-bd90-d25e7d14533d	c0cdad46-13e8-4676-b968-870d612a56a6	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 13:33:08.29794+00
+8dae2ead-4aa1-4c5e-b5cf-bfe29983f8d4	89e6be0e-a9b4-4fe6-9279-33ed2b76fce3	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 13:33:23.254246+00
+2555086f-b7d7-476f-b47c-35b9271a8e99	64847a43-0d73-4da1-8889-654207460d7c	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 13:37:52.995166+00
+e41eb44d-b5d5-4318-babd-8a2773df50c1	60152974-a979-418a-8599-48e586941364	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 13:47:34.019466+00
+61e9b9d1-d41e-4275-8351-fc1725b3e19b	849161d7-db83-4171-8ad4-35535dd63473	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 13:50:23.314984+00
+98048a20-c888-4633-8763-603da8b97d26	d477e5c1-97be-48d3-9677-6af83d2feef6	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 13:57:02.395558+00
+51bb9f69-fd33-436b-b314-08a9e2338371	a4a00858-2834-44ad-9aeb-880f8ec1de1d	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 14:00:10.590226+00
+df029c57-3dca-4062-8502-b5008c51ddcf	8006e4b3-6d3d-4112-9309-2e9da24eed90	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:00:33.301694+00
+59ea8505-d9e5-4764-a080-cf2b846717e8	1835f22c-3de3-44b3-9eb8-6aadc5601529	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:00:34.4707+00
+4d3f62bc-37db-4e9f-8822-0a7b6e579bb1	747b3486-bf84-4497-8a8d-e5ed299c91ed	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:04:07.042291+00
+7019cdc8-3ffd-4774-90a4-e4eb84d393cd	ed9d5026-fb24-46f6-b1e6-9d084274a4a9	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 14:04:08.125952+00
+59b2f7f5-b9dc-4038-8007-c780fabbc43d	1a4d5240-ef9a-42a8-aa55-b51b168c78f3	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 14:05:28.376586+00
+3e38a1a6-d1d9-4ea7-8926-fbca45bc78b6	4377fe83-856a-43d4-8a4b-66be1756abe6	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:08:59.46486+00
+ca2ee02c-b6ac-49c8-8818-a89b700db5f9	0e9390d1-cf76-4d40-9efa-932e2d8dd3da	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 14:09:00.481522+00
+aa34bfc1-c998-4465-b94a-1ac7cfd91530	be854ca8-c5b2-4cab-9d90-09c7317ae04c	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:09:42.122382+00
+f271d46a-711a-4c48-9303-ad26cc2d7fd1	aac01ae7-dc24-4a20-99b2-865c316fc9b6	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 14:11:25.893993+00
+9a43a86e-01c6-4651-b588-8a338389cbed	b4f37bea-a93b-4d13-bdca-fc537129be9a	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:13:50.579906+00
+1a0d9963-bd96-4d36-830f-d568bb00f02b	3ba8a148-d159-43c4-b0b2-c40312de4a62	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:14:26.846671+00
+fa979e5e-be01-4442-941f-50ed91a31a4e	ffd0d477-159e-4895-9365-9be54298f2ed	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:20:49.470854+00
+422aac02-549d-4e1f-8df9-d8f6428055e7	0542321b-bf97-4304-b260-6696b614d90e	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 14:26:39.476201+00
+4d0f1708-b6f8-41f7-b501-fafec34f0e0d	41aa02bb-d773-4135-8f8f-8d0351f5e862	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:26:40.220617+00
+1ebdc237-6e5e-4f77-83ba-f95bb024ff3b	d4f10815-40ee-434f-8df2-01b1622d64f9	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 14:27:40.931573+00
+950dc586-9eff-402e-85bf-cd10e93edc86	f623c83b-cd05-4ead-82b8-48af1e5edd74	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:35:07.566525+00
+13aa81ed-656a-4f14-bba7-6fce61bfe10e	382d9355-0cd5-4c5f-a075-74da2cfb8354	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 14:35:08.336159+00
+bc6de28e-d0bc-4af4-8c7c-9a7848a1c3c5	3e633143-3a12-404a-a40b-772437ae32ca	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 14:39:24.298422+00
+30ad2edd-e445-4326-80f3-db84590e11aa	4f58b1f9-f68a-4bb0-aee1-32a22b42c1ca	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 14:41:26.217962+00
+bd992773-a8dd-46f4-84b9-a79140b66f10	f5ae3ea6-130e-45c5-bedb-162a3b7c039c	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 14:41:27.274447+00
+b72b35fc-203c-4536-9b4d-eb9c7cc8fbc6	ab1214c4-54d5-4a9b-9049-f45e730e3c8a	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 14:44:23.680233+00
+2040f067-c109-4ca2-a69d-8524ed5ed421	095f3f74-ab9c-42d1-8c93-e2ca1510cffd	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 14:44:24.760211+00
+0ea70ab2-d720-485f-909f-bce9dcb219b5	c313bd47-89ce-4c0b-9962-358a77e130f2	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:46:15.364081+00
+610795af-03df-43d1-a957-c0e84952bfe7	f013509b-8327-45a0-a857-c63dbfec48ed	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:49:38.213098+00
+e1afb3db-49b3-4072-a115-5d6325ab63d8	d431718d-d2cb-4096-8665-ee15803de579	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 14:50:27.068986+00
+a2cc8a48-1272-480c-ad35-5ae960a8cc61	292133e0-0e49-4611-b866-70051fe7dbdf	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 14:50:27.698529+00
+326eb1e4-900f-4b3b-a65f-e613ab73088f	965218b9-178f-4977-a91b-d5d8a6cf7c4f	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:51:38.321735+00
+0a020d70-c77f-42d5-a0af-e7478327d5de	1edfb711-711c-4678-99c3-cc83e2d7e767	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:51:39.363648+00
+174979ba-45d1-45c6-bde9-0102d6cac063	321f19f8-efb5-4ce0-972f-03420b577d54	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 14:54:03.302956+00
+0ed730f2-8e08-4f3e-b4f2-55b02bb5d1af	8451b7af-ab62-4875-8fb8-37cccd34d951	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 14:54:04.318575+00
+4f7524ee-2cf1-42d8-b330-409168cf3844	42e839d0-54fb-478b-9298-4efeb11a6a6d	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 14:54:26.780689+00
+b17f1c84-a90d-45ee-a057-cca4692349c6	d737aaf0-e886-4444-a832-0647d9ebc582	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:03:48.787633+00
+6885e12e-c1c7-40c7-ac30-fd7df01b2f96	21342707-da85-4ea3-bcfc-f7e5107b6e29	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 15:06:53.300928+00
+e2801bb4-a94b-4db9-ad43-64a6b0d03300	95dea3cd-b5f0-4012-afa4-8e2fb3de37af	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:10:26.834623+00
+003ba0bb-a5df-49c5-bb0f-50af9d01e23d	0b67d1cf-e340-45a6-b2de-7b105f0ab406	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:17:02.757095+00
+80836bc9-9999-46f5-86b9-22e545fb54fa	c7c4118a-4edf-4743-93fb-30e4d9bed281	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:21:05.130804+00
+d1c2b20a-6a7f-423a-925b-02978be072a4	57a8bcc8-4278-4ca8-bfa0-deceb73a37db	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:21:06.026336+00
+281e4c51-3e9b-4a6e-9d58-69bc6a82d289	f9258c98-8193-4278-b878-d45b8bcd6e91	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:30:30.070753+00
+b9603391-cb78-4b02-8889-31dbfc4db8c8	37595616-c403-47c2-b779-06809d94432c	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:30:57.98199+00
+046d4099-0965-4db6-b633-38fcc5416a5c	fb05d0c3-2fce-4ea8-9908-ad4b253134b4	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 15:31:04.717818+00
+8d061175-3e4a-4170-b224-d5fe64a03722	22f92bba-1d45-471f-a571-cb75e1ddd322	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 15:40:16.536584+00
+bfa8161a-264c-46e8-ad03-6326c90be70a	e6997ac5-2d42-4004-a1a4-7e76ac6c4e75	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:52:17.605812+00
+0617f982-d2b2-43c5-a3ff-f15b9d716721	fb8ffbb7-2312-4419-b34f-92cbd15ba7db	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:54:10.356954+00
+c0061b99-4512-406d-b4a8-9febd4fca6a6	dfb6af24-e289-472c-a024-36088468cf8b	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:54:11.229734+00
+e026fb07-ec05-4495-9904-b61ef293f6c6	525b4e29-a5b8-479b-b6d8-f132852f8eed	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 15:58:18.507662+00
+ba9cc195-7917-4d86-a5d2-84b954295b1b	e48ec011-9fea-4a1a-a8a9-201dd9e69d83	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 16:01:12.919324+00
+fa785d45-aadc-43f2-ad19-3d872caf852d	04a7a394-9ce0-44f3-b53e-ef6d001abfbe	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:03:57.775536+00
+bfe0563f-de0e-4d3b-a21d-736da939cc96	9a4056b7-2c69-4b53-a321-050a1e37157f	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:06:44.620716+00
+d8b903ad-9427-41c3-8ec8-91a9751f997e	b276c276-d6b5-4dcb-919e-4f70927519ca	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:07:39.704466+00
+c515bd9c-7e36-40fb-b236-f67127edd918	2d66afcf-cc3a-443c-b6b8-9db4d11001ec	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 16:08:24.174903+00
+0d7935c1-6eff-4833-b260-faa123cd2a6a	73bbfdac-28e6-4654-bcd9-e799153d5d3c	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 16:08:24.992633+00
+4cd01509-b983-4ec5-8dce-4fd47a077d07	0b1eef98-961a-41d1-a40a-a31bc66cb044	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:23:11.672883+00
+9fa46e79-b0f3-4458-b8d7-7bf23ab9a2ab	8112dd71-79b1-4b72-8c05-28fc2dc86c52	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 16:26:21.973527+00
+e3eaeb19-9a52-45fd-b4fa-780f477f7bb2	bd2b89af-c9ff-4f1f-83cc-a50c9b2a7a65	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:34:50.70264+00
+5ab787a3-6af9-4a05-8cc3-4b1c6274781e	c9689b03-86f4-4df8-96dd-814d1f43097e	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 16:34:51.571079+00
+b50a4dcc-5302-4b8f-adba-1e11c1be4bea	ff5b2745-3aff-493f-8266-399e720fcaa2	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:37:02.337808+00
+9c6abbff-a301-473b-bda4-474cb0da9d93	c93407b1-1c7c-4142-a5d9-e009bf6f08c1	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:37:59.844358+00
+35c417cf-6cc2-4904-b806-9ec604c08301	18c1e15c-aaf2-4634-8eb4-f310efba8c9e	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:41:05.385097+00
+3e358dd1-daf5-4c1c-88b3-964db2ff1025	d1beadce-ffec-4006-a835-8890f85fa25c	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:45:49.475634+00
+052bc32c-1f02-4fc9-bad1-e9388fe11550	46debf28-8502-4c67-936a-63f133967ef1	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 16:51:46.113254+00
+eeb74070-99ce-4e4f-a5de-899fda155ff0	e34828bb-2b37-40ec-81bb-8013ae9d8227	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:53:54.737025+00
+f13fdec9-92c3-43b2-a7ab-d40620e6c22f	150b239c-9f01-4fd7-8bea-638435e85d1d	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 16:58:55.223386+00
+2c49d958-58f8-4da7-9492-44ff4799a2b2	7f3e4427-57c4-49fd-ab0c-44ab6be5e6d6	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 16:59:18.478492+00
+b9be471b-86ce-40ba-a045-d381fc8c3096	50e7c8c2-cf8d-4c03-89fe-52ffcab3fca4	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 17:04:57.134285+00
+9aaaf275-03f0-431d-864b-0007d7eafbfb	3422293c-3c67-4f2a-99e8-710f21c55187	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 17:04:58.03961+00
+1b71b02a-0558-4b66-a4b5-57e3c5de7898	0cfa15d6-d2cb-4e3a-a42e-dc109bdac640	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 17:06:20.869725+00
+d7948220-5d62-4b1f-809f-014b84aacc1f	83a8a21c-8c27-473d-a104-c5fdec71d499	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 17:06:21.799497+00
+cd825be6-eb9b-4c6d-9ff7-74b1c8a7a894	fca96161-6adf-47d3-b844-fe665ead8a4b	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 17:18:38.18634+00
+2cb0431f-58be-4d04-b404-3bf78ff5e0a6	a2ed2f34-3d4c-44c0-b0c6-bb73f47830b5	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 17:22:49.742044+00
+ee6550b1-9b10-4d96-80c6-f2cfe742b1be	d201cfd7-11fe-448e-bd6d-d239092ee9e7	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 17:24:12.953636+00
+3f2bf526-7397-4fda-9854-a23896ffe99e	8bbf9522-0727-476c-8fb9-399929e01465	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 17:24:33.910534+00
+fd0a0b55-c0ae-4649-9d4b-4b5f6641d202	1124a6ae-6beb-4ff0-8b19-8f104d07fd80	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 17:26:05.22489+00
+b448e83c-9d58-426b-8338-ba70efa5f4a8	7028f6e4-9bf3-487a-be2c-6350690cd3fe	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 17:28:14.481226+00
+093a969b-60b5-4034-a706-c30606b46de1	448234ba-b2e6-4594-8385-67fa19919a2d	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 17:28:57.999217+00
+f405fa62-2c60-4b69-bdea-a403cf652710	dbd6b4b5-069a-4285-a26e-4b408e8c5f20	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 17:31:39.102255+00
+a9c1a324-c303-4616-aef7-8781c8ec58ce	eb57c0dc-42e9-4c9b-913e-720ebe438f96	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 17:39:52.006099+00
+8e48e717-66f0-40a0-818d-d5d815238823	77f82776-7fe7-4a90-b0de-02849022e966	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 17:43:24.215379+00
+aebe7656-b854-4831-88b7-227d6a01ac58	ad01040a-26e3-46c6-a122-dc58ca087d42	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 17:43:25.341008+00
+9d04e995-1c35-4499-80ec-9be126e6b1ed	00fa5005-4d70-4c18-8f17-5339c4f4bc8a	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 17:46:27.848431+00
+28dabb8f-c9a5-426c-8e40-d607440e05fe	83d09a44-b853-4e9f-a8ff-6983b768c69c	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 17:49:45.77614+00
+abc8aa18-37eb-4373-a8c5-40853aaceb8f	c676eaa1-5005-4078-9918-24c070fb5c9d	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 17:51:13.922913+00
+5302c6d6-cf51-4399-b646-a312bac46a84	792c4c55-8542-4b55-a75c-ac085167a4ca	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 17:51:15.017565+00
+0d80c6cb-a461-49d1-b023-f5e2ca65132b	0903992a-582d-4834-8cc7-c78a356d5ae6	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 17:55:20.646617+00
+b94613c0-2aa3-4a11-b21a-2c1b3913db7e	f5eebcfd-ff1a-4517-aa13-4b47fcc7383c	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 17:58:56.35196+00
+b7d50bdb-4bc1-4adb-83d2-f1ae254fc259	a020927c-073f-4c93-9c7f-24680ee84f0e	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 18:01:34.748843+00
+9decdb9f-a593-49aa-bf22-133283d326c4	1c33f813-f78f-4a44-ac96-4c50505fbf2b	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 18:06:38.302515+00
+48c2c67e-dc0b-4630-ae1f-6ca0fe75c7ff	6e56eaae-cbdb-4d23-9fcf-4f3cea764526	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 18:06:39.371317+00
+f20b5cad-0d88-4517-aa1f-4c16077251d3	a7b0fa03-8565-4d09-b23d-b9ccba2f7e9d	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 18:10:43.644341+00
+55bbf649-92bb-409b-92e0-7f3e134e50da	526498ad-17e7-42a0-b860-06d2051b0498	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 18:10:44.559496+00
+bafb0674-eb4c-4334-ae83-6413dd5ecf60	0e47dd10-36b2-4f20-ae99-e12c618e75e8	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 18:13:59.623067+00
+f6f0d88b-9e49-4d0f-a42c-321dc2472876	163787af-b663-4883-b1de-202f777e3c9d	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 18:26:42.419241+00
+1401b109-75e3-4601-baa4-d8cd3b42ebe1	1bb7f07b-32fe-4b28-aa42-b20f0ee9dc01	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 18:28:41.837665+00
+5d7648fd-f835-414d-9efd-d1481208ff43	1bb7f07b-32fe-4b28-aa42-b20f0ee9dc01	cf765b90-5fd9-473d-bd51-4412fe7cf6dc	9.00	2026-10-23 18:28:42.548768+00
+3338454f-98bd-4eab-a7fb-6269aee477fb	04d6c80b-edf0-459a-9b82-8862909a98af	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 18:28:43.197154+00
+1539598f-2458-4475-ad5e-0b07fd5a19ef	a9620ac3-98b7-45bf-a6b8-031c97c7997d	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 18:30:02.694759+00
+a961474f-50ef-4095-aca7-68ae31d8850f	e795d13e-55bd-45b3-8d35-554882083a82	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 18:30:03.623512+00
+34a658c5-ede4-4340-b725-039be74a1560	ba1d0921-2d60-4bdb-915d-4b935d9d0080	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 18:30:48.377444+00
+8d9fb9f6-b759-4299-8169-245a43bce002	0cf848d9-a64e-446e-9a6f-4634828dda4a	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 18:31:48.427457+00
+69cf4afc-cb9e-48ac-b5ef-3381ae4de84d	813410e3-e8fd-4a24-b598-72d27e8e0dce	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 18:31:49.534864+00
+537ac82d-3571-4ca0-aacd-edd9b6ce5584	cecab547-43df-45de-8199-5ce623ece729	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 18:33:27.071316+00
+669216e7-9cff-4bcc-b459-ad507f703680	1e5ae00e-116a-44d7-a45c-b65908dcfc82	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 18:36:55.612221+00
+c3d68fbb-52e5-45aa-ac22-0fc869984512	2e8bcb1c-051c-4f4f-9168-a33d4309befe	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 18:38:41.527027+00
+6d8bf7a8-3e61-46fc-9539-798d76343d54	2e8bcb1c-051c-4f4f-9168-a33d4309befe	cf765b90-5fd9-473d-bd51-4412fe7cf6dc	9.00	2026-10-23 18:38:42.205592+00
+eb96334e-3039-47b5-880e-91cb3b18a55a	d1880891-971b-44e3-b676-51e259546259	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 18:38:42.85559+00
+6e375f79-bca6-41c6-a6a3-736603f41f94	5fc4c167-1f9d-4f21-b7e3-284fcaf2d89e	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 18:41:26.937837+00
+471c7945-ac0e-40a5-a6fa-c00296f57967	2658aa05-ec0a-4aef-a019-5cf394d47860	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 18:41:27.638076+00
+9660ffff-1aa5-4f85-a629-c1a95ab3b9ac	046f2869-9020-4c75-87ff-77222fa30abb	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 18:44:09.608219+00
+66839477-d6dd-497c-b355-3020a3086641	0a3b4efc-7829-43b6-a94b-11af02e4729c	3d64b118-1c5a-4452-a244-f9523a4842bd	1.00	2026-10-23 18:47:23.392862+00
+faf8bdd5-a015-475f-9304-02fc8648c9fb	2b3d765d-f7aa-4c11-9302-eb05656ddfd1	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 18:47:24.281035+00
+3b6481e9-15bd-4dd4-8d5c-c9d7da126018	5cbce8b0-cdb9-4792-8c28-774afd2e786e	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 18:50:31.971134+00
+d87acee1-fe5c-46ac-a09a-88018360fb6f	e650b18d-7c80-445a-9a62-afd08d52d19f	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 18:50:47.601468+00
+242190fe-1aa8-4d5b-aa91-288f19d53fc4	23842a7d-6fd6-4afd-8316-78f95956a5f5	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 18:50:48.284405+00
+ead160a8-9779-4715-ab39-a5a0441a3921	aa6c1d0e-1d5c-4c55-810b-7d33d351e819	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 18:53:44.597059+00
+f8632dca-4c9f-4168-8fe1-8b3d249ef9db	8059bc60-5238-4682-a110-5b244c6215ac	33aec911-2a82-4265-a29e-de8a59af7636	1.00	2026-10-23 18:53:45.65318+00
+b26364a6-e7b9-48b1-b095-260320eb84ed	65509140-d4d5-4195-9b0e-4f8343429e55	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 18:55:41.23453+00
+b362030f-2545-4cb8-a49b-b0519a6bcd9d	518d2c57-faa9-48fd-8f7a-4edb6fd110f6	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 18:55:42.023205+00
+9bd62313-b4e1-48e4-819c-abb254ae785b	ffcacc58-946e-494d-9f3e-ca472b39ade1	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 19:01:55.114367+00
+68d2bd81-842f-4eb9-97a9-09abebb21581	8eddeb18-f557-4c8b-ad0a-988c6a77d5d6	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 19:01:56.237654+00
+8a1398b9-1630-43dc-8b07-e4555f656f2d	ee6f0e8b-38a8-449d-92ec-6de48fd24bcc	6407d9f9-3b85-478d-97b0-b8c33387031e	1.00	2026-10-23 19:01:57.047011+00
+2f6cdbe1-4aaf-402f-b66e-8f83cd2492de	da677715-e978-424a-9cc3-05f339e6b53c	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 19:01:57.663371+00
+0423586f-4e18-4024-b127-e3700ca9434c	fe0e10ea-3b1e-4f99-825b-857b39ffb99c	b01569db-3d22-4a42-9055-13583391d6d0	1.00	2026-10-23 19:20:04.038436+00
+ff6d8956-2c70-4026-935a-07f0c4c64a7a	fe0e10ea-3b1e-4f99-825b-857b39ffb99c	cf765b90-5fd9-473d-bd51-4412fe7cf6dc	9.00	2026-10-23 19:20:04.58804+00
+fea333b1-6042-45f0-88b2-f31b1d15430b	4377e419-a4d3-4b15-be80-d41193cbe264	b3ff6ef5-51c7-4a53-96a4-f40af4959b27	1.00	2026-10-23 20:07:00.244141+00
 \.
 
 
@@ -443042,7 +443725,7 @@ COPY "storage"."vector_indexes" ("id", "name", "bucket_id", "data_type", "dimens
 -- Name: refresh_tokens_id_seq; Type: SEQUENCE SET; Schema: auth; Owner: supabase_auth_admin
 --
 
-SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 11108, true);
+SELECT pg_catalog.setval('"auth"."refresh_tokens_id_seq"', 11126, true);
 
 
 --
@@ -443056,6 +443739,6 @@ SELECT pg_catalog.setval('"public"."roles_id_seq"', 3, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict x0UoAeEZGhf7JFjIuaAc2Pv4gjw9wWFpyWldWuY4ii4L3ZzUlUe1MUGANSWFFkK
+-- \unrestrict MMxhe3kzGf4AY1MziaB8VfhfYCNTI8OJoOJLAbF6J6saHa1vUXbw0YoQgYdKfd8
 
 RESET ALL;
